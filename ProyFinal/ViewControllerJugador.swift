@@ -12,7 +12,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     
     @IBOutlet weak var collectionView: UICollectionView!
 
-    
+    var listaCartas = [String](arrayLiteral: "taza", "baston", "pastillero", "jarabe", "cafe", "termometro", "cama", "libros", "juegos de mesa", "enfermero", "inyeccion", "pastillas", "suero", "reloj", "lentes", "bolsa", "dentadura", "sillon", "lupa", "pijamas", "cepillo", "maletin", "pantunflas", "bufanda", "guantes", "camion", "fotos", "camara", "sombrero")
     
     var array = ["First Cell", "Second Cell", "Third Cell", "Fourth Cell", "Fifth Cell", "Sixth Cell", "Seventh Cell", "Eighth Cell", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho"]
     
@@ -34,7 +34,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         let containerView = UIView(frame: CGRect(x:0,y:0,width:320,height:500))
         let imageView = UIImageView()
         collectionView.isPagingEnabled = true;
-        let myCellImage = UIImageView(image: UIImage(named: "taza"))
+        let myCellImage = UIImageView(image: UIImage(named: listaCartas[indexPath.row]))
         cell.backgroundView = myCellImage
         
         /*if let image = UIImage(named: "taza") {
@@ -49,7 +49,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             }
         }*/
         
-        cell.contentView.addSubview(imageView)
+        //cell.contentView.addSubview(imageView)
         
         return cell
     }
