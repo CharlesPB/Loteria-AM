@@ -41,10 +41,12 @@ class ViewControllerDarCarta: UIViewController {
 
     
     @IBAction func siguienteCarta(_ sender: UIButton) {
-        imgCarta.image = UIImage(named: listaCartas[index])
-        listaCartasDadas.append(listaCartas[index])
-        listaCartas.remove(at: index)
-        index = index + 1
+        if index < listaCartas.count{
+            imgCarta.image = UIImage(named: listaCartas[index])
+            listaCartasDadas.append(listaCartas[index])
+            listaCartas.remove(at: index)
+            index = index + 1
+        }
     }
     
     
