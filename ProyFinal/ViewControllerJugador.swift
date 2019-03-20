@@ -15,6 +15,10 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     
     
     var array = ["First Cell", "Second Cell", "Third Cell", "Fourth Cell", "Fifth Cell", "Sixth Cell", "Seventh Cell", "Eighth Cell", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho"]
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return array.count
     }
@@ -29,8 +33,11 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         
         let containerView = UIView(frame: CGRect(x:0,y:0,width:320,height:500))
         let imageView = UIImageView()
+        collectionView.isPagingEnabled = true;
+        let myCellImage = UIImageView(image: UIImage(named: "taza"))
+        cell.backgroundView = myCellImage
         
-        if let image = UIImage(named: "taza") {
+        /*if let image = UIImage(named: "taza") {
             let ratio = image.size.width / image.size.height
             if containerView.frame.width > containerView.frame.height {
                 let newHeight = containerView.frame.width / ratio
@@ -40,7 +47,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
                 let newWidth = containerView.frame.height * ratio
                 imageView.frame.size = CGSize(width: newWidth, height: containerView.frame.height)
             }
-        }
+        }*/
         
         cell.contentView.addSubview(imageView)
         

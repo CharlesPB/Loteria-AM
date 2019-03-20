@@ -48,10 +48,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="9TZ-Ag-sxz"/>
-                    <connections>
-                        <outlet property="btModoDarCarta" destination="KD7-4U-3ga" id="VX5-3m-PgL"/>
-                        <outlet property="btModoJugador" destination="Dem-SM-Frv" id="LEc-mz-vrZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,8 +79,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="70" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
+                                        <color key="backgroundColor" red="0.70254655840000002" green="0.68365080369999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ppy-Ur-GwT" id="bmK-iW-vjp"/>
+                                    <outlet property="delegate" destination="ppy-Ur-GwT" id="Ejm-fP-ByC"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.70534787879847349" green="1" blue="0.69297189276896975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
