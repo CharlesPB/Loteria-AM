@@ -31,9 +31,10 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
 //        title.text = array[indexPath.row]
 //        title.textAlignment = .center
         
-        let containerView = UIView(frame: CGRect(x:0,y:0,width:320,height:500))
-        let imageView = UIImageView()
+        //let containerView = UIView(frame: CGRect(x:0,y:0,width:320,height:500))
+        //let imageView = UIImageView()
         collectionView.isPagingEnabled = true;
+        listaCartas.shuffle()
         let myCellImage = UIImageView(image: UIImage(named: listaCartas[indexPath.row]))
         cell.backgroundView = myCellImage
         

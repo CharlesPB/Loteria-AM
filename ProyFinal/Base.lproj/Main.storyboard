@@ -79,7 +79,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="70" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
-                                        <color key="backgroundColor" red="0.70254655840000002" green="0.68365080369999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
