@@ -57,6 +57,10 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     }
     
 
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
