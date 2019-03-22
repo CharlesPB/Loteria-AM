@@ -14,6 +14,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
 
     var listaCartas = [String](arrayLiteral: "taza", "baston", "pastillero", "jarabe", "cafe", "termometro", "cama", "libros", "juegos de mesa", "enfermero", "inyeccion", "pastillas", "suero", "reloj", "lentes", "bolsa", "dentadura", "sillon", "lupa", "pijamas", "cepillo", "maletin", "pantunflas", "bufanda", "guantes", "camion", "fotos", "camara", "sombrero")
     
+    
     var array = ["First Cell", "Second Cell", "Third Cell", "Fourth Cell", "Fifth Cell", "Sixth Cell", "Seventh Cell", "Eighth Cell", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho"]
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -63,6 +64,8 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         // Do any additional setup after loading the view.
         
         self.title = "Modo jugador"
+        listaCartas.shuffle()
+
     }
     
 
