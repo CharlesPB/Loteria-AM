@@ -34,7 +34,7 @@ class ViewControllerModoGanar: UIViewController, UITableViewDelegate, UITableVie
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         modoGanar = listaModoGanar[indexPath.row]
         tableview.backgroundColor = UIColor.lightGray
     }
@@ -45,7 +45,7 @@ class ViewControllerModoGanar: UIViewController, UITableViewDelegate, UITableVie
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vistaJugador = segue.destination as! ViewControllerJugador
-        vistaJugador.modoGanar = modoGanar
+        vistaJugador.comoGanar = modoGanar
     }
     
 

@@ -22,6 +22,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     var listaBackUp = ["First Cell", "Second Cell", "Third Cell", "Fourth Cell", "Fifth Cell", "Sixth Cell", "Seventh Cell", "Eighth Cell", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho"]
     
     var gano = false
+    var comoGanar : String! = "Vertical"
     var modoGanar : String!
     
     override func viewDidLoad() {
@@ -37,7 +38,8 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             listaBackUp[i] = listaCartas[i]
         }
         
-        
+        modoGanar = comoGanar
+        print(modoGanar)
     }
     
     
@@ -119,41 +121,45 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     // función para validar si ya se ganó
     func checarGano(){
         // checar horizontales
-        if ((posOcupadas[0] == true) && (posOcupadas[1] == true) && (posOcupadas[2] && true) && (posOcupadas[3] == true) ) {
-            gano = true
+        if modoGanar == "Horizontal" {
+            if ((posOcupadas[0] == true) && (posOcupadas[1] == true) && (posOcupadas[2] && true) && (posOcupadas[3] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[4] == true) && (posOcupadas[5] == true) && (posOcupadas[6] && true) && (posOcupadas[7] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[8] == true) && (posOcupadas[9] == true) && (posOcupadas[10] && true) && (posOcupadas[11] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[12] == true) && (posOcupadas[13] == true) && (posOcupadas[14] && true) && (posOcupadas[15] == true) ) {
+                gano = true
+            }
         }
-        if ((posOcupadas[4] == true) && (posOcupadas[5] == true) && (posOcupadas[6] && true) && (posOcupadas[7] == true) ) {
-            gano = true
-        }
-        if ((posOcupadas[8] == true) && (posOcupadas[9] == true) && (posOcupadas[10] && true) && (posOcupadas[11] == true) ) {
-            gano = true
-        }
-        if ((posOcupadas[12] == true) && (posOcupadas[13] == true) && (posOcupadas[14] && true) && (posOcupadas[15] == true) ) {
-            gano = true
-        }
-        
         // checar verticales
-        if ((posOcupadas[0] == true) && (posOcupadas[4] == true) && (posOcupadas[8] && true) && (posOcupadas[12] == true) ) {
-            gano = true
-        }
-        if ((posOcupadas[1] == true) && (posOcupadas[5] == true) && (posOcupadas[9] && true) && (posOcupadas[13] == true) ) {
-            gano = true
-        }
-        if ((posOcupadas[2] == true) && (posOcupadas[6] == true) && (posOcupadas[10] && true) && (posOcupadas[14] == true) ) {
-            gano = true
-        }
-        if ((posOcupadas[3] == true) && (posOcupadas[7] == true) && (posOcupadas[11] && true) && (posOcupadas[15] == true) ) {
-            gano = true
+        if modoGanar == "Vertical" {
+            if ((posOcupadas[0] == true) && (posOcupadas[4] == true) && (posOcupadas[8] && true) && (posOcupadas[12] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[1] == true) && (posOcupadas[5] == true) && (posOcupadas[9] && true) && (posOcupadas[13] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[2] == true) && (posOcupadas[6] == true) && (posOcupadas[10] && true) && (posOcupadas[14] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[3] == true) && (posOcupadas[7] == true) && (posOcupadas[11] && true) && (posOcupadas[15] == true) ) {
+                gano = true
+            }
         }
         
         // checar diagonales
-        if ((posOcupadas[0] == true) && (posOcupadas[5] == true) && (posOcupadas[10] && true) && (posOcupadas[15] == true) ) {
-            gano = true
+        if modoGanar == "Diagonal"{
+            if ((posOcupadas[0] == true) && (posOcupadas[5] == true) && (posOcupadas[10] && true) && (posOcupadas[15] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[3] == true) && (posOcupadas[6] == true) && (posOcupadas[9] && true) && (posOcupadas[12] == true) ) {
+                gano = true
+            }
         }
-        if ((posOcupadas[3] == true) && (posOcupadas[6] == true) && (posOcupadas[9] && true) && (posOcupadas[12] == true) ) {
-            gano = true
-        }
-        
         
     }
     
