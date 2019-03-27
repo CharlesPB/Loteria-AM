@@ -10,6 +10,8 @@ import UIKit
 
 class ViewControllerModoGanar: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var tableview: UITableView!
+    
     var listaModoGanar = [String](arrayLiteral: "Vertical", "Horizontal", "Diagonal", "Cuadro Chico", "Cuadro Grande")
     var modoGanar : String!
     
@@ -34,6 +36,7 @@ class ViewControllerModoGanar: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         modoGanar = listaModoGanar[indexPath.row]
+        tableview.backgroundColor = UIColor.lightGray
     }
     
     
