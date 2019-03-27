@@ -104,6 +104,15 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             
             alerta.addAction(accion)
             present(alerta, animated: true, completion: nil)
+
+            
+            for i in 0...posOcupadas.count-1 {
+                posOcupadas[i] = false
+            }
+            gano = false
+            for i in 0...listaTabla.count-1 {
+                listaTabla[i] = listaBackUp[i]
+            }
         }
     }
     
@@ -161,7 +170,9 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             listaTabla[i] = listaCartas[i]
             listaBackUp[i] = listaCartas[i]
         }
-        posOcupadas = [false]
+        for i in 0...posOcupadas.count-1 {
+            posOcupadas[i] = false
+        }
         gano = false
         collectionView.reloadData()
     }
