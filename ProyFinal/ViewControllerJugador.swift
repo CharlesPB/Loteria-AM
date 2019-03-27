@@ -22,6 +22,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     var listaBackUp = ["First Cell", "Second Cell", "Third Cell", "Fourth Cell", "Fifth Cell", "Sixth Cell", "Seventh Cell", "Eighth Cell", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho"]
     
     var gano = false
+    var modoGanar : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()

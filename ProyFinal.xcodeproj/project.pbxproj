@@ -15,6 +15,7 @@
 		EA3AAB2B223AC8FF00FA26CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3AAB29223AC8FF00FA26CE /* LaunchScreen.storyboard */; };
 		EA94C459223AE40000DE83A1 /* ViewControllerDarCarta.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94C458223AE40000DE83A1 /* ViewControllerDarCarta.swift */; };
 		EA94C45B223AE50100DE83A1 /* ViewControllerJugador.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94C45A223AE50100DE83A1 /* ViewControllerJugador.swift */; };
+		FBDC65AC224C1E83006BF6EF /* ViewControllerModoGanar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC65AB224C1E83006BF6EF /* ViewControllerModoGanar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EA3AAB2C223AC8FF00FA26CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA94C458223AE40000DE83A1 /* ViewControllerDarCarta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDarCarta.swift; sourceTree = "<group>"; };
 		EA94C45A223AE50100DE83A1 /* ViewControllerJugador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerJugador.swift; sourceTree = "<group>"; };
+		FBDC65AB224C1E83006BF6EF /* ViewControllerModoGanar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerModoGanar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				EA3AAB20223AC8FB00FA26CE /* AppDelegate.swift */,
 				EA3AAB22223AC8FB00FA26CE /* ViewController.swift */,
 				EA3AAB24223AC8FB00FA26CE /* Main.storyboard */,
+				FBDC65AB224C1E83006BF6EF /* ViewControllerModoGanar.swift */,
 				65D67CC32242BC8100CBA2F0 /* TableViewControllerCartasDadas.swift */,
 				EA94C45A223AE50100DE83A1 /* ViewControllerJugador.swift */,
 				EA94C458223AE40000DE83A1 /* ViewControllerDarCarta.swift */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA3AAB23223AC8FB00FA26CE /* ViewController.swift in Sources */,
+				FBDC65AC224C1E83006BF6EF /* ViewControllerModoGanar.swift in Sources */,
 				EA94C45B223AE50100DE83A1 /* ViewControllerJugador.swift in Sources */,
 				EA94C459223AE40000DE83A1 /* ViewControllerDarCarta.swift in Sources */,
 				EA3AAB21223AC8FB00FA26CE /* AppDelegate.swift in Sources */,
