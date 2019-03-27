@@ -161,6 +161,21 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             }
         }
         
+        //checar cuadro chico centro
+        if modoGanar == "Cuadro Chico"{
+            if ((posOcupadas[5] == true) && (posOcupadas[6] == true) && (posOcupadas[9] && true) && (posOcupadas[10] == true) ) {
+                gano = true
+            }
+        }
+        
+        //checar cuadro grande
+        //cuetro esquinas
+        if modoGanar == "Cuadro Grande"{
+            if ((posOcupadas[0] == true) && (posOcupadas[3] == true) && (posOcupadas[12] && true) && (posOcupadas[15] == true) ) {
+                gano = true
+            }
+        }
+        
     }
     
     
