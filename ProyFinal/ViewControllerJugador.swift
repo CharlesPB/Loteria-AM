@@ -153,7 +153,18 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         return true
     }
     
-    
+    //Función para generar una nueva tabla
+    //Al darle click al botón Nueva Tabla
+    @IBAction func generaNuevaTabla(_ sender: Any) {
+        listaCartas.shuffle()
+        for i in 0...15 {
+            listaTabla[i] = listaCartas[i]
+            listaBackUp[i] = listaCartas[i]
+        }
+        posOcupadas = [false]
+        gano = false
+        collectionView.reloadData()
+    }
     
     /*
      // MARK: - Navigation

@@ -90,6 +90,9 @@
                                 <rect key="frame" x="239" y="578" width="110" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Nueva Tabla"/>
+                                <connections>
+                                    <action selector="generaNuevaTabla:" destination="ppy-Ur-GwT" eventType="touchUpInside" id="gzA-kk-NWg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.70534787879847349" green="1" blue="0.69297189276896975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
