@@ -40,7 +40,8 @@ class TableViewControllerCartasDadas: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
-        //cell.textLabel?.text = listaCartasYaDadas[indexPath.row]
+        cell.textLabel?.text = String(describing: indexPath.row)
+        
         cell.imageView?.image = UIImage(named: listaCartasYaDadas[indexPath.row]) 
         
         // Configure the cell...

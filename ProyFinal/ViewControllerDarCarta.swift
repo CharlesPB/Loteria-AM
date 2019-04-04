@@ -34,7 +34,7 @@ class ViewControllerDarCarta: UIViewController {
         listaCartas.shuffle()
         imgCarta.image = UIImage(named: listaCartas[index])
         listaCartasDadas.append(listaCartas[index])
-        listaCartas.remove(at: index)
+        //listaCartas.remove(at: index)
         index = index + 1
         
         
@@ -46,7 +46,7 @@ class ViewControllerDarCarta: UIViewController {
         if index < listaCartas.count{
             imgCarta.image = UIImage(named: listaCartas[index])
             listaCartasDadas.append(listaCartas[index])
-            listaCartas.remove(at: index)
+            //listaCartas.remove(at: index)
             index = index + 1
         }
     }
@@ -61,6 +61,8 @@ class ViewControllerDarCarta: UIViewController {
         // Pass the selected object to the new view controller.
         let vistaCartasDadas = segue.destination as! TableViewControllerCartasDadas
         vistaCartasDadas.listaCartasYaDadas = listaCartasDadas
+        //vistaCartasDadas.listaCartasYaDadas = listaCartas
+        
     }
     
 
