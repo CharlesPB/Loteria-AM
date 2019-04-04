@@ -17,6 +17,8 @@ class ViewControllerDarCarta: UIViewController {
     var listaCartasDadas = [String]()
     
     
+    //  hhh
+    
     var index : Int = 0
     
     
