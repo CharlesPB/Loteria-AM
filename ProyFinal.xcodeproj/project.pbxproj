@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		65D67CC42242BC8100CBA2F0 /* TableViewControllerCartasDadas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D67CC32242BC8100CBA2F0 /* TableViewControllerCartasDadas.swift */; };
+		65EFC6F6225933DF0007C6E4 /* ViewControllerCartasDadas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EFC6F5225933DF0007C6E4 /* ViewControllerCartasDadas.swift */; };
 		EA3AAB21223AC8FB00FA26CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3AAB20223AC8FB00FA26CE /* AppDelegate.swift */; };
 		EA3AAB23223AC8FB00FA26CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3AAB22223AC8FB00FA26CE /* ViewController.swift */; };
 		EA3AAB26223AC8FB00FA26CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3AAB24223AC8FB00FA26CE /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		65D67CC32242BC8100CBA2F0 /* TableViewControllerCartasDadas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerCartasDadas.swift; sourceTree = "<group>"; };
+		65EFC6F5225933DF0007C6E4 /* ViewControllerCartasDadas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCartasDadas.swift; sourceTree = "<group>"; };
 		EA3AAB1D223AC8FB00FA26CE /* ProyFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3AAB20223AC8FB00FA26CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA3AAB22223AC8FB00FA26CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				EA3AAB20223AC8FB00FA26CE /* AppDelegate.swift */,
 				EA3AAB22223AC8FB00FA26CE /* ViewController.swift */,
 				EA3AAB24223AC8FB00FA26CE /* Main.storyboard */,
+				65EFC6F5225933DF0007C6E4 /* ViewControllerCartasDadas.swift */,
 				FBDC65AB224C1E83006BF6EF /* ViewControllerModoGanar.swift */,
 				65D67CC32242BC8100CBA2F0 /* TableViewControllerCartasDadas.swift */,
 				EA94C458223AE40000DE83A1 /* ViewControllerDarCarta.swift */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA3AAB23223AC8FB00FA26CE /* ViewController.swift in Sources */,
+				65EFC6F6225933DF0007C6E4 /* ViewControllerCartasDadas.swift in Sources */,
 				FBDC65AC224C1E83006BF6EF /* ViewControllerModoGanar.swift in Sources */,
 				EA94C45B223AE50100DE83A1 /* ViewControllerJugador.swift in Sources */,
 				EA94C459223AE40000DE83A1 /* ViewControllerDarCarta.swift in Sources */,

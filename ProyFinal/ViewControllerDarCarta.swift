@@ -51,6 +51,7 @@ class ViewControllerDarCarta: UIViewController {
         }
     }
     
+ 
     
     
     // MARK: - Navigation
@@ -59,7 +60,7 @@ class ViewControllerDarCarta: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        let vistaCartasDadas = segue.destination as! TableViewControllerCartasDadas
+        let vistaCartasDadas = segue.destination as! ViewControllerCartasDadas
         vistaCartasDadas.listaCartasYaDadas = listaCartasDadas
         //vistaCartasDadas.listaCartasYaDadas = listaCartas
         

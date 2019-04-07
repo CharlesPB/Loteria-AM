@@ -12,6 +12,7 @@ class TableViewControllerCartasDadas: UITableViewController {
     
     var listaCartasYaDadas = [String]()
     
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,8 @@ class TableViewControllerCartasDadas: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         self.title = "Lista de cartas dadas"
+        
+      
     }
 
     // MARK: - Table view data source
