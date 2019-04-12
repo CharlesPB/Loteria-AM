@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -24,6 +25,11 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     var gano = false
     var comoGanar : String! = "Vertical"
     var modoGanar : String!
+    
+    // Variables para que vibre
+    let selection = UISelectionFeedbackGenerator()
+    let notification = UINotificationFeedbackGenerator()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,6 +90,14 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         //        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collCell", for: indexPath) as! UICollectionViewCell
         //        let myCellImage = UIImageView(image: UIImage(named: ficha))
         
+        // Vibra cuando se pone o quita una ficha
+        selection.selectionChanged()
+        
+        // vibra en iphone 6s
+        AudioServicesPlaySystemSound(1519)
+        
+        
+        
         if posOcupadas[indexPath.item] == false {
             posOcupadas[indexPath.item] = true
             listaTabla[indexPath.item] = "ficha"
@@ -100,6 +114,12 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         if gano == true {
             
             // se manda una mensaje de felicitaciones en caso de que ya se hayan llenado suficientes en la tabla
+            
+            // vibra cuando gana
+            notification.notificationOccurred(.success)
+            
+            // iphone 6s
+            AudioServicesPlaySystemSound(1519)
             
             let alerta = UIAlertController(title: "Felicidades", message: "Haz ganado", preferredStyle: .alert)
             let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
