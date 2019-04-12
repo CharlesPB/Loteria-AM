@@ -16,6 +16,8 @@ class ViewControllerDarCarta: UIViewController {
     
     var listaCartasDadas = [String]()
     
+    let selection = UISelectionFeedbackGenerator()
+    
     
     //  hhh
     
@@ -48,6 +50,7 @@ class ViewControllerDarCarta: UIViewController {
             listaCartasDadas.append(listaCartas[index])
             //listaCartas.remove(at: index)
             index = index + 1
+            selection.selectionChanged()
         }
     }
     

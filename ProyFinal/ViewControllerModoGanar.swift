@@ -15,6 +15,8 @@ class ViewControllerModoGanar: UIViewController, UITableViewDelegate, UITableVie
     var listaModoGanar = [String](arrayLiteral: "Vertical", "Horizontal", "Diagonal", "Cuadro Chico", "Cuadro Grande")
     var modoGanar : String!
     
+    let selection = UISelectionFeedbackGenerator()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,6 +37,7 @@ class ViewControllerModoGanar: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selection.selectionChanged()
         modoGanar = listaModoGanar[indexPath.row]
         tableview.backgroundColor = UIColor.lightGray
     }

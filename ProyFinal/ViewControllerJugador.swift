@@ -94,7 +94,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         selection.selectionChanged()
         
         // vibra en iphone 6s
-        AudioServicesPlaySystemSound(1519)
+        //AudioServicesPlaySystemSound(1519)
         
         
         
@@ -119,7 +119,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             notification.notificationOccurred(.success)
             
             // iphone 6s
-            AudioServicesPlaySystemSound(1519)
+            //AudioServicesPlaySystemSound(1519)
             
             let alerta = UIAlertController(title: "Felicidades", message: "Haz ganado", preferredStyle: .alert)
             let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
