@@ -163,7 +163,31 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         
         //checar cuadro chico centro
         if modoGanar == "Cuadro Chico"{
+            if ((posOcupadas[0] == true) && (posOcupadas[1] == true) && (posOcupadas[4] && true) && (posOcupadas[5] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[1] == true) && (posOcupadas[2] == true) && (posOcupadas[5] && true) && (posOcupadas[6] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[2] == true) && (posOcupadas[3] == true) && (posOcupadas[6] && true) && (posOcupadas[7] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[4] == true) && (posOcupadas[5] == true) && (posOcupadas[8] && true) && (posOcupadas[9] == true) ) {
+                gano = true
+            }
             if ((posOcupadas[5] == true) && (posOcupadas[6] == true) && (posOcupadas[9] && true) && (posOcupadas[10] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[7] == true) && (posOcupadas[6] == true) && (posOcupadas[11] && true) && (posOcupadas[10] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[8] == true) && (posOcupadas[12] == true) && (posOcupadas[9] && true) && (posOcupadas[13] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[13] == true) && (posOcupadas[14] == true) && (posOcupadas[9] && true) && (posOcupadas[10] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[11] == true) && (posOcupadas[14] == true) && (posOcupadas[15] && true) && (posOcupadas[10] == true) ) {
                 gano = true
             }
         }
