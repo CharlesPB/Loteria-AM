@@ -128,16 +128,25 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             present(alerta, animated: true, completion: nil)
 
             
-            for i in 0...posOcupadas.count-1 {
-                posOcupadas[i] = false
-            }
+//            for i in 0...posOcupadas.count-1 {
+//                posOcupadas[i] = false
+//            }
             gano = false
-            for i in 0...listaTabla.count-1 {
-                listaTabla[i] = listaBackUp[i]
-            }
+//            for i in 0...listaTabla.count-1 {
+//                listaTabla[i] = listaBackUp[i]
+//            }
         }
     }
     
+    @IBAction func limpiarTabla(_ sender: UIButton) {
+        for i in 0...posOcupadas.count-1 {
+            posOcupadas[i] = false
+        }
+        for i in 0...listaTabla.count-1 {
+            listaTabla[i] = listaBackUp[i]
+        }
+        collectionView.reloadData()
+    }
     // función para validar si ya se ganó
     func checarGano(){
         // checar horizontales

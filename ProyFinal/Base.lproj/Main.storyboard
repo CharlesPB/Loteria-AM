@@ -107,6 +107,14 @@
                                     <action selector="generaNuevaTabla:" destination="ppy-Ur-GwT" eventType="touchUpInside" id="gzA-kk-NWg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSq-k2-3zE">
+                                <rect key="frame" x="32" y="578" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Limpiar tabla"/>
+                                <connections>
+                                    <action selector="limpiarTabla:" destination="ppy-Ur-GwT" eventType="touchUpInside" id="62b-36-T81"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.70534787879847349" green="1" blue="0.69297189276896975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
