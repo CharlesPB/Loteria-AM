@@ -140,61 +140,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecionar Modo de Ganar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNe-Xt-YY2">
-                                <rect key="frame" x="28" y="84" width="319" height="32"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hgA-JJ-eh9">
-                                <rect key="frame" x="68" y="228" width="239" height="193"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="cSc-5g-nE5">
-                                        <rect key="frame" x="0.0" y="28" width="239" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cSc-5g-nE5" id="Yrl-xi-vZ1">
-                                            <rect key="frame" x="0.0" y="0.0" width="239" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="tcR-3F-1vg" id="AAp-MO-kpH"/>
-                                    <outlet property="delegate" destination="tcR-3F-1vg" id="l6c-ci-7iU"/>
-                                </connections>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ck-8r-nlW">
-                                <rect key="frame" x="257" y="529" width="50" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ck-8r-nlW">
+                                <rect key="frame" x="306" y="612" width="49" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="njV-7O-BEa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="Listo"/>
                                 <connections>
                                     <segue destination="ppy-Ur-GwT" kind="show" id="mwL-w9-yMz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvV-lW-zSk">
+                                <rect key="frame" x="51" y="100" width="273" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="verticalCheck"/>
+                                <connections>
+                                    <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="rwP-rM-C6k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpO-mh-WRN">
+                                <rect key="frame" x="51" y="170" width="273" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="horizontal"/>
+                                <connections>
+                                    <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="Pqu-da-BZl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eba-AW-yCk">
+                                <rect key="frame" x="51" y="240" width="273" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="diagonal"/>
+                                <connections>
+                                    <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="iBn-dz-M1h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6T-c9-CiG">
+                                <rect key="frame" x="51" y="310" width="273" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="cuadroChico"/>
+                                <connections>
+                                    <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="uIM-0q-9OE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaW-p9-Gg7">
+                                <rect key="frame" x="51" y="380" width="273" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="cuadroGrande"/>
+                                <connections>
+                                    <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="3gZ-iK-bTH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEu-Ro-mc6">
+                                <rect key="frame" x="51" y="450" width="273" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="llena"/>
+                                <connections>
+                                    <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="M05-pb-wSC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80016926450000003" blue="0.81136627059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="GNe-Xt-YY2" firstAttribute="top" secondItem="mYv-x9-GiW" secondAttribute="top" constant="20" id="5ue-51-KdK"/>
-                            <constraint firstItem="mYv-x9-GiW" firstAttribute="bottom" secondItem="1Ck-8r-nlW" secondAttribute="bottom" constant="100" id="GS4-mJ-MkX"/>
-                            <constraint firstItem="GNe-Xt-YY2" firstAttribute="centerX" secondItem="mYv-x9-GiW" secondAttribute="centerX" id="UNT-t7-LqX"/>
-                            <constraint firstItem="hgA-JJ-eh9" firstAttribute="top" secondItem="GNe-Xt-YY2" secondAttribute="bottom" constant="112" id="ZbW-cm-DLr"/>
-                            <constraint firstItem="1Ck-8r-nlW" firstAttribute="trailing" secondItem="hgA-JJ-eh9" secondAttribute="trailing" id="act-56-ViK"/>
-                            <constraint firstItem="1Ck-8r-nlW" firstAttribute="top" secondItem="hgA-JJ-eh9" secondAttribute="bottom" constant="108" id="ayl-2i-HHI"/>
-                            <constraint firstItem="1Ck-8r-nlW" firstAttribute="leading" secondItem="mYv-x9-GiW" secondAttribute="leading" constant="257" id="dgm-7U-0z3"/>
-                            <constraint firstItem="1Ck-8r-nlW" firstAttribute="top" secondItem="hgA-JJ-eh9" secondAttribute="bottom" constant="108" id="hMa-df-unV"/>
-                            <constraint firstItem="mYv-x9-GiW" firstAttribute="trailing" secondItem="1Ck-8r-nlW" secondAttribute="trailing" constant="68" id="okG-jy-wfg"/>
-                            <constraint firstItem="hgA-JJ-eh9" firstAttribute="centerX" secondItem="mYv-x9-GiW" secondAttribute="centerX" id="ph0-fz-Ovk"/>
+                            <constraint firstItem="1Ck-8r-nlW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mYv-x9-GiW" secondAttribute="leading" symbolic="YES" id="Oyq-MH-PwL"/>
+                            <constraint firstItem="mYv-x9-GiW" firstAttribute="trailing" secondItem="1Ck-8r-nlW" secondAttribute="trailing" constant="20" id="fP6-Sw-Da8"/>
+                            <constraint firstItem="mYv-x9-GiW" firstAttribute="bottom" secondItem="1Ck-8r-nlW" secondAttribute="bottom" constant="17" id="t2W-Qj-Kp0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mYv-x9-GiW"/>
                     </view>
-                    <connections>
-                        <outlet property="tableview" destination="hgA-JJ-eh9" id="JI9-Pc-FA9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zN-uT-smV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2124" y="465.51724137931041"/>
+            <point key="canvasLocation" x="2122.4000000000001" y="464.6176911544228"/>
         </scene>
         <!--View Controller Dar Carta-->
         <scene sceneID="g5U-v2-mbk">
@@ -246,37 +263,6 @@
             </objects>
             <point key="canvasLocation" x="2124" y="-287.40629685157421"/>
         </scene>
-        <!--Table View Controller Cartas Dadas-->
-        <scene sceneID="WVe-Qr-czd">
-            <objects>
-                <tableViewController id="mxU-C9-E0T" customClass="TableViewControllerCartasDadas" customModule="ProyFinal" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2K5-TL-luU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celda" id="jgN-pA-Y9V">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jgN-pA-Y9V" id="JiF-5Z-xhL">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="mxU-C9-E0T" id="J7a-HH-scT"/>
-                            <outlet property="delegate" destination="mxU-C9-E0T" id="FD3-MV-gdO"/>
-                        </connections>
-                    </tableView>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="D90-n2-gZm"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9V3-v3-WWk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3074" y="-1103"/>
-        </scene>
         <!--View Controller Cartas Dadas-->
         <scene sceneID="vha-R2-oWa">
             <objects>
@@ -320,4 +306,12 @@
             <point key="canvasLocation" x="240.80000000000001" y="45.42728635682159"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cuadroChico" width="572" height="141"/>
+        <image name="cuadroGrande" width="575" height="141"/>
+        <image name="diagonal" width="575" height="139"/>
+        <image name="horizontal" width="572" height="139"/>
+        <image name="llena" width="575" height="141"/>
+        <image name="verticalCheck" width="575" height="143"/>
+    </resources>
 </document>
