@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HDU-Il-prt">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProyFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD7-4U-3ga">
-                                <rect key="frame" x="58.5" y="241" width="258" height="51"/>
+                                <rect key="frame" x="78" y="274" width="258" height="51"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <state key="normal" title="Modo dar la carta"/>
                                 <connections>
@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dem-SM-Frv">
-                                <rect key="frame" x="84.5" y="372" width="206" height="51"/>
+                                <rect key="frame" x="104" y="405" width="206" height="51"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <state key="normal" title="Modo jugador"/>
                                 <connections>
@@ -35,13 +35,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Lotería" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxZ-nk-pS0">
-                                <rect key="frame" x="115" y="96" width="145" height="45"/>
+                                <rect key="frame" x="134.5" y="120" width="145" height="54"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPj-1Y-719">
-                                <rect key="frame" x="85" y="503" width="205" height="51"/>
+                                <rect key="frame" x="104.5" y="536" width="205" height="213"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <state key="normal" title="¿Cómo jugar?"/>
                             </button>
@@ -72,12 +72,11 @@
             <objects>
                 <viewController id="ppy-Ur-GwT" customClass="ViewControllerJugador" customModule="ProyFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2J0-7k-Vhk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bhm-90-abX">
-                                <rect key="frame" x="44" y="110" width="286" height="362"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bhm-90-abX">
+                                <rect key="frame" x="44" y="134" width="325" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="QWP-je-hEA">
                                     <size key="itemSize" width="70" height="90"/>
@@ -101,6 +100,7 @@
                                                 </button>
                                             </subviews>
                                         </view>
+                                        <size key="customSize" width="70" height="90"/>
                                         <connections>
                                             <outlet property="btFicha" destination="8KG-y4-1zS" id="uGx-CZ-uaA"/>
                                         </connections>
@@ -112,15 +112,14 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hax-Zh-27l">
-                                <rect key="frame" x="239" y="578" width="110" height="30"/>
+                                <rect key="frame" x="239" y="773" width="149" height="30"/>
                                 <state key="normal" title="Nueva Tabla"/>
                                 <connections>
                                     <action selector="generaNuevaTabla:" destination="ppy-Ur-GwT" eventType="touchUpInside" id="gzA-kk-NWg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSq-k2-3zE">
-                                <rect key="frame" x="32" y="578" width="89" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSq-k2-3zE">
+                                <rect key="frame" x="32" y="773" width="89" height="30"/>
                                 <state key="normal" title="Limpiar tabla"/>
                                 <connections>
                                     <action selector="limpiarTabla:" destination="ppy-Ur-GwT" eventType="touchUpInside" id="62b-36-T81"/>
@@ -130,12 +129,21 @@
                         <color key="backgroundColor" red="0.70534787879847349" green="1" blue="0.69297189276896975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hax-Zh-27l" firstAttribute="leading" secondItem="k6o-Hl-icz" secondAttribute="leading" constant="239" id="C05-uo-wmj"/>
+                            <constraint firstItem="hax-Zh-27l" firstAttribute="top" secondItem="bhm-90-abX" secondAttribute="bottom" constant="106" id="DgF-5W-pBm"/>
+                            <constraint firstItem="hax-Zh-27l" firstAttribute="leading" secondItem="GSq-k2-3zE" secondAttribute="trailing" constant="118" id="EGN-ff-yCo"/>
                             <constraint firstItem="k6o-Hl-icz" firstAttribute="trailing" secondItem="hax-Zh-27l" secondAttribute="trailing" constant="26" id="Feg-Pr-6Av"/>
+                            <constraint firstItem="bhm-90-abX" firstAttribute="leading" secondItem="k6o-Hl-icz" secondAttribute="leading" constant="44" id="GoW-Aw-XLt"/>
+                            <constraint firstItem="GSq-k2-3zE" firstAttribute="top" secondItem="bhm-90-abX" secondAttribute="bottom" constant="106" id="Kxw-Xn-ozr"/>
+                            <constraint firstItem="GSq-k2-3zE" firstAttribute="leading" secondItem="k6o-Hl-icz" secondAttribute="leading" constant="32" id="dY3-UF-xmN"/>
+                            <constraint firstItem="bhm-90-abX" firstAttribute="top" secondItem="k6o-Hl-icz" secondAttribute="top" constant="46" id="iGu-TF-B4T"/>
+                            <constraint firstItem="k6o-Hl-icz" firstAttribute="trailing" secondItem="bhm-90-abX" secondAttribute="trailing" constant="45" id="kHb-3Y-tAh"/>
+                            <constraint firstItem="k6o-Hl-icz" firstAttribute="bottom" secondItem="GSq-k2-3zE" secondAttribute="bottom" constant="59" id="qog-kY-dJB"/>
                             <constraint firstItem="k6o-Hl-icz" firstAttribute="bottom" secondItem="hax-Zh-27l" secondAttribute="bottom" constant="59" id="zsH-r3-p6v"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k6o-Hl-icz"/>
                     </view>
                     <connections>
+                        <outlet property="btNuevaTabla" destination="hax-Zh-27l" id="Ges-fq-LPJ"/>
                         <outlet property="collectionView" destination="bhm-90-abX" id="aio-8X-bUG"/>
                     </connections>
                 </viewController>
@@ -148,11 +156,11 @@
             <objects>
                 <viewController id="tcR-3F-1vg" customClass="ViewControllerModoGanar" customModule="ProyFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6WL-sc-N2V">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ck-8r-nlW">
-                                <rect key="frame" x="306" y="612" width="49" height="38"/>
+                                <rect key="frame" x="345" y="807" width="49" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="njV-7O-BEa"/>
                                 </constraints>
@@ -229,11 +237,11 @@
             <objects>
                 <viewController id="QhY-JH-zMl" customClass="ViewControllerDarCarta" customModule="ProyFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WXd-SM-hPv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l35-WN-s6N">
-                                <rect key="frame" x="209" y="579" width="150" height="38"/>
+                                <rect key="frame" x="248" y="774" width="150" height="38"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="Siguiente carta"/>
                                 <connections>
@@ -241,10 +249,10 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1wc-Nw-Uo7">
-                                <rect key="frame" x="47" y="89" width="281" height="394"/>
+                                <rect key="frame" x="47" y="113" width="320" height="565"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoz-xf-4n3">
-                                <rect key="frame" x="16" y="587" width="156" height="30"/>
+                                <rect key="frame" x="16" y="782" width="156" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Lista de cartas dadas"/>
                                 <connections>
@@ -279,11 +287,11 @@
             <objects>
                 <viewController id="IYd-tU-fVl" customClass="ViewControllerCartasDadas" customModule="ProyFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hbR-mv-Pa8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UDc-L2-Hx0">
-                                <rect key="frame" x="46" y="119" width="282" height="201"/>
+                                <rect key="frame" x="46" y="119" width="321" height="201"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                         </subviews>
@@ -304,7 +312,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HDU-Il-prt" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TpO-Tv-7Lt">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

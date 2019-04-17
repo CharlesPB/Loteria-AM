@@ -13,6 +13,8 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var btNuevaTabla: UIButton!
+    
     var listaCartas = [String](arrayLiteral: "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49")
     
     
@@ -32,7 +34,6 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     // Variables para que vibre
     let selection = UISelectionFeedbackGenerator()
     let notification = UINotificationFeedbackGenerator()
-
     
     
     override func viewDidLoad() {
@@ -50,6 +51,9 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         }
         
         print(listaComoGanar)
+        
+       
+        
     }
     
     
@@ -96,8 +100,20 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         
         //cell.contentView.addSubview(imageView)
         
+
         return cell
     }
+    
+//    func collectionView(_ collectionView: UICollectionView,
+//                        layout collectionViewLayout: UICollectionViewLayout,
+//                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let size = CGSize(width: self.width, height: self.height)
+//        print(size)
+//
+//        return size
+//
+//    }
+    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
@@ -282,4 +298,27 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
      }
      */
     
+}
+
+extension  ViewControllerJugador: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+       
+        let size = CGSize(width: collectionView.frame.width / 4, height: collectionView.frame.height / 4)
+        return size
+        
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView,
+//                        layout collectionViewLayout: UICollectionViewLayout,
+//                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+//        return 1.0
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout
+//        collectionViewLayout: UICollectionViewLayout,
+//                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        return 1.0
+//    }
 }
