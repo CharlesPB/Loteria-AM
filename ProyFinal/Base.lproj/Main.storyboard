@@ -86,13 +86,24 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collCell" id="ARB-Cp-bke">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collCell" id="ARB-Cp-bke" customClass="CollectionViewCellTabla" customModule="ProyFinal" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="70" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KG-y4-1zS">
+                                                    <rect key="frame" x="14" y="28" width="43" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" backgroundImage="ficha"/>
+                                                    <state key="disabled" backgroundImage="ficha"/>
+                                                </button>
+                                            </subviews>
                                         </view>
+                                        <connections>
+                                            <outlet property="btFicha" destination="8KG-y4-1zS" id="uGx-CZ-uaA"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -130,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1pU-lb-OIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3281" y="466"/>
+            <point key="canvasLocation" x="3280.8000000000002" y="465.51724137931041"/>
         </scene>
         <!--View Controller Modo Ganar-->
         <scene sceneID="SUR-5B-CQF">
@@ -310,6 +321,7 @@
         <image name="cuadroChico" width="572" height="141"/>
         <image name="cuadroGrande" width="575" height="141"/>
         <image name="diagonal" width="575" height="139"/>
+        <image name="ficha" width="464" height="463"/>
         <image name="horizontal" width="572" height="139"/>
         <image name="llena" width="575" height="141"/>
         <image name="verticalCheck" width="575" height="143"/>

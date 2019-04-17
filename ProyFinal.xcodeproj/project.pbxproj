@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		65EFC6F6225933DF0007C6E4 /* ViewControllerCartasDadas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EFC6F5225933DF0007C6E4 /* ViewControllerCartasDadas.swift */; };
+		65F121402266ED5900D31027 /* CollectionViewCellTabla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F1213F2266ED5900D31027 /* CollectionViewCellTabla.swift */; };
 		EA3AAB21223AC8FB00FA26CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3AAB20223AC8FB00FA26CE /* AppDelegate.swift */; };
 		EA3AAB23223AC8FB00FA26CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3AAB22223AC8FB00FA26CE /* ViewController.swift */; };
 		EA3AAB26223AC8FB00FA26CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3AAB24223AC8FB00FA26CE /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		65EFC6F5225933DF0007C6E4 /* ViewControllerCartasDadas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCartasDadas.swift; sourceTree = "<group>"; };
+		65F1213F2266ED5900D31027 /* CollectionViewCellTabla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellTabla.swift; sourceTree = "<group>"; };
 		EA3AAB1D223AC8FB00FA26CE /* ProyFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3AAB20223AC8FB00FA26CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA3AAB22223AC8FB00FA26CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				EA3AAB20223AC8FB00FA26CE /* AppDelegate.swift */,
+				65F1213F2266ED5900D31027 /* CollectionViewCellTabla.swift */,
 				EA3AAB22223AC8FB00FA26CE /* ViewController.swift */,
 				EA3AAB24223AC8FB00FA26CE /* Main.storyboard */,
 				65EFC6F5225933DF0007C6E4 /* ViewControllerCartasDadas.swift */,
@@ -151,6 +154,7 @@
 				65EFC6F6225933DF0007C6E4 /* ViewControllerCartasDadas.swift in Sources */,
 				FBDC65AC224C1E83006BF6EF /* ViewControllerModoGanar.swift in Sources */,
 				EA94C45B223AE50100DE83A1 /* ViewControllerJugador.swift in Sources */,
+				65F121402266ED5900D31027 /* CollectionViewCellTabla.swift in Sources */,
 				EA94C459223AE40000DE83A1 /* ViewControllerDarCarta.swift in Sources */,
 				EA3AAB21223AC8FB00FA26CE /* AppDelegate.swift in Sources */,
 			);

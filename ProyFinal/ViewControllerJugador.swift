@@ -22,20 +22,25 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     var listaTabla = ["First Cell", "Second Cell", "Third Cell", "Fourth Cell", "Fifth Cell", "Sixth Cell", "Seventh Cell", "Eighth Cell", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho"]
     var listaBackUp = ["First Cell", "Second Cell", "Third Cell", "Fourth Cell", "Fifth Cell", "Sixth Cell", "Seventh Cell", "Eighth Cell", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho"]
     
+    
+    
     var gano = false
-    var comoGanar : String! = "Vertical"
-    var modoGanar : String!
+    var listaComoGanar = [Bool](arrayLiteral: false, false, false, false, false, false)
+    
+    
     
     // Variables para que vibre
     let selection = UISelectionFeedbackGenerator()
     let notification = UINotificationFeedbackGenerator()
 
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
         // Do any additional setup after loading the view.
+        
         
         self.title = "Modo jugador"
         listaCartas.shuffle()
@@ -44,8 +49,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             listaBackUp[i] = listaCartas[i]
         }
         
-        modoGanar = comoGanar
-        print(modoGanar)
+        print(listaComoGanar)
     }
     
     
@@ -57,8 +61,16 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collCell", for: indexPath) as! UICollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collCell", for: indexPath) as! CollectionViewCellTabla
+    
         
+        // Si está ocupada la carta, se pone la ficha
+        if (posOcupadas[indexPath.row] == true) {
+            cell.btFicha.isHidden = false
+        }
+        else { // Si no está ocupada, se quita la ficha
+            cell.btFicha.isHidden = true
+        }
         
         
         collectionView.isPagingEnabled = true;
@@ -67,6 +79,8 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         //let nombreCarta = listaCartas[indexPath.row]
         let myCellImage = UIImageView(image: UIImage(named: listaTabla[indexPath.row]))
         cell.backgroundView = myCellImage
+        
+        
         
         /*if let image = UIImage(named: "taza") {
          let ratio = image.size.width / image.size.height
@@ -100,7 +114,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         
         if posOcupadas[indexPath.item] == false {
             posOcupadas[indexPath.item] = true
-            listaTabla[indexPath.item] = "ficha"
+            //listaTabla[indexPath.item] = "ficha"
             
         } else {
             listaTabla[indexPath.item] = listaBackUp[indexPath.item]
@@ -150,7 +164,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     // función para validar si ya se ganó
     func checarGano(){
         // checar horizontales
-        if modoGanar == "Horizontal" {
+        if (listaComoGanar[1] == true){
             if ((posOcupadas[0] == true) && (posOcupadas[1] == true) && (posOcupadas[2] && true) && (posOcupadas[3] == true) ) {
                 gano = true
             }
@@ -165,7 +179,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             }
         }
         // checar verticales
-        if modoGanar == "Vertical" {
+        if (listaComoGanar[0] == true){
             if ((posOcupadas[0] == true) && (posOcupadas[4] == true) && (posOcupadas[8] && true) && (posOcupadas[12] == true) ) {
                 gano = true
             }
@@ -181,7 +195,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         }
         
         // checar diagonales
-        if modoGanar == "Diagonal"{
+        if (listaComoGanar[2] == true){
             if ((posOcupadas[0] == true) && (posOcupadas[5] == true) && (posOcupadas[10] && true) && (posOcupadas[15] == true) ) {
                 gano = true
             }
@@ -190,8 +204,8 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             }
         }
         
-        //checar cuadro chico centro
-        if modoGanar == "Cuadro Chico"{
+        //checar cuadro chico
+        if (listaComoGanar[3] == true){
             if ((posOcupadas[0] == true) && (posOcupadas[1] == true) && (posOcupadas[4] && true) && (posOcupadas[5] == true) ) {
                 gano = true
             }
@@ -221,13 +235,20 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             }
         }
         
-        //checar cuadro grande
-        //todo el cuadro de afuera
-        if modoGanar == "Cuadro Grande"{
+        //checar cuadro grande (esquinas)
+        if (listaComoGanar[4] == true) {
             if ((posOcupadas[0] == true) && (posOcupadas[3] == true)  && (posOcupadas[12] && true) && (posOcupadas[15] == true) ) {
                 gano = true
             }
         }
+        
+        // checar llena
+        if (listaComoGanar[5] == true) {
+            if ((posOcupadas[0] == true) && (posOcupadas[1] == true)  && (posOcupadas[2] == true) && (posOcupadas[3] == true) && (posOcupadas[4] == true) && (posOcupadas[5] == true)  && (posOcupadas[6] == true) && (posOcupadas[7] == true) && (posOcupadas[8] == true) && (posOcupadas[9] == true)  && (posOcupadas[10] == true) && (posOcupadas[11] == true) && (posOcupadas[12] == true) && (posOcupadas[13] == true)  && (posOcupadas[14] == true) && (posOcupadas[15] == true)) {
+                gano = true
+            }
+        }
+        
         
     }
     
