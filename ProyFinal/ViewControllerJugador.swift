@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var listaCartas = [String](arrayLiteral: "taza", "baston", "pastillero", "jarabe", "cafe", "termometro", "cama", "libros", "juegos de mesa", "enfermero", "inyeccion", "pastillas", "suero", "reloj", "lentes", "bolsa", "dentadura", "sillon", "lupa", "pijamas", "cepillo", "maletin", "pantunflas", "bufanda", "guantes", "camion", "fotos", "camara", "sombrero")
+    @IBOutlet weak var btNuevaTabla: UIButton!
+    
+    var listaCartas = [String](arrayLiteral: "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49")
     
     
     var posOcupadas = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
@@ -21,15 +24,24 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     var listaTabla = ["First Cell", "Second Cell", "Third Cell", "Fourth Cell", "Fifth Cell", "Sixth Cell", "Seventh Cell", "Eighth Cell", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho"]
     var listaBackUp = ["First Cell", "Second Cell", "Third Cell", "Fourth Cell", "Fifth Cell", "Sixth Cell", "Seventh Cell", "Eighth Cell", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho"]
     
+    
+    
     var gano = false
-    var comoGanar : String! = "Vertical"
-    var modoGanar : String!
+    var listaComoGanar = [Bool](arrayLiteral: false, false, false, false, false, false)
+    
+    
+    
+    // Variables para que vibre
+    let selection = UISelectionFeedbackGenerator()
+    let notification = UINotificationFeedbackGenerator()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
         // Do any additional setup after loading the view.
+        
         
         self.title = "Modo jugador"
         listaCartas.shuffle()
@@ -38,8 +50,10 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             listaBackUp[i] = listaCartas[i]
         }
         
-        modoGanar = comoGanar
-        print(modoGanar)
+        print(listaComoGanar)
+        
+       
+        
     }
     
     
@@ -51,8 +65,16 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collCell", for: indexPath) as! UICollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collCell", for: indexPath) as! CollectionViewCellTabla
+    
         
+        // Si está ocupada la carta, se pone la ficha
+        if (posOcupadas[indexPath.row] == true) {
+            cell.btFicha.isHidden = false
+        }
+        else { // Si no está ocupada, se quita la ficha
+            cell.btFicha.isHidden = true
+        }
         
         
         collectionView.isPagingEnabled = true;
@@ -61,6 +83,8 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         //let nombreCarta = listaCartas[indexPath.row]
         let myCellImage = UIImageView(image: UIImage(named: listaTabla[indexPath.row]))
         cell.backgroundView = myCellImage
+        
+        
         
         /*if let image = UIImage(named: "taza") {
          let ratio = image.size.width / image.size.height
@@ -76,17 +100,37 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         
         //cell.contentView.addSubview(imageView)
         
+
         return cell
     }
+    
+//    func collectionView(_ collectionView: UICollectionView,
+//                        layout collectionViewLayout: UICollectionViewLayout,
+//                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let size = CGSize(width: self.width, height: self.height)
+//        print(size)
+//
+//        return size
+//
+//    }
+    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         //        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collCell", for: indexPath) as! UICollectionViewCell
         //        let myCellImage = UIImageView(image: UIImage(named: ficha))
         
+        // Vibra cuando se pone o quita una ficha
+        selection.selectionChanged()
+        
+        // vibra en iphone 6s
+        //AudioServicesPlaySystemSound(1519)
+        
+        
+        
         if posOcupadas[indexPath.item] == false {
             posOcupadas[indexPath.item] = true
-            listaTabla[indexPath.item] = "ficha"
+            //listaTabla[indexPath.item] = "ficha"
             
         } else {
             listaTabla[indexPath.item] = listaBackUp[indexPath.item]
@@ -101,6 +145,12 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             
             // se manda una mensaje de felicitaciones en caso de que ya se hayan llenado suficientes en la tabla
             
+            // vibra cuando gana
+            notification.notificationOccurred(.success)
+            
+            // iphone 6s
+            //AudioServicesPlaySystemSound(1519)
+            
             let alerta = UIAlertController(title: "Felicidades", message: "Haz ganado", preferredStyle: .alert)
             let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             
@@ -108,20 +158,29 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             present(alerta, animated: true, completion: nil)
 
             
-            for i in 0...posOcupadas.count-1 {
-                posOcupadas[i] = false
-            }
+//            for i in 0...posOcupadas.count-1 {
+//                posOcupadas[i] = false
+//            }
             gano = false
-            for i in 0...listaTabla.count-1 {
-                listaTabla[i] = listaBackUp[i]
-            }
+//            for i in 0...listaTabla.count-1 {
+//                listaTabla[i] = listaBackUp[i]
+//            }
         }
     }
     
+    @IBAction func limpiarTabla(_ sender: UIButton) {
+        for i in 0...posOcupadas.count-1 {
+            posOcupadas[i] = false
+        }
+        for i in 0...listaTabla.count-1 {
+            listaTabla[i] = listaBackUp[i]
+        }
+        collectionView.reloadData()
+    }
     // función para validar si ya se ganó
     func checarGano(){
         // checar horizontales
-        if modoGanar == "Horizontal" {
+        if (listaComoGanar[1] == true){
             if ((posOcupadas[0] == true) && (posOcupadas[1] == true) && (posOcupadas[2] && true) && (posOcupadas[3] == true) ) {
                 gano = true
             }
@@ -136,7 +195,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             }
         }
         // checar verticales
-        if modoGanar == "Vertical" {
+        if (listaComoGanar[0] == true){
             if ((posOcupadas[0] == true) && (posOcupadas[4] == true) && (posOcupadas[8] && true) && (posOcupadas[12] == true) ) {
                 gano = true
             }
@@ -152,7 +211,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         }
         
         // checar diagonales
-        if modoGanar == "Diagonal"{
+        if (listaComoGanar[2] == true){
             if ((posOcupadas[0] == true) && (posOcupadas[5] == true) && (posOcupadas[10] && true) && (posOcupadas[15] == true) ) {
                 gano = true
             }
@@ -161,20 +220,51 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             }
         }
         
-        //checar cuadro chico centro
-        if modoGanar == "Cuadro Chico"{
+        //checar cuadro chico
+        if (listaComoGanar[3] == true){
+            if ((posOcupadas[0] == true) && (posOcupadas[1] == true) && (posOcupadas[4] && true) && (posOcupadas[5] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[1] == true) && (posOcupadas[2] == true) && (posOcupadas[5] && true) && (posOcupadas[6] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[2] == true) && (posOcupadas[3] == true) && (posOcupadas[6] && true) && (posOcupadas[7] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[4] == true) && (posOcupadas[5] == true) && (posOcupadas[8] && true) && (posOcupadas[9] == true) ) {
+                gano = true
+            }
             if ((posOcupadas[5] == true) && (posOcupadas[6] == true) && (posOcupadas[9] && true) && (posOcupadas[10] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[7] == true) && (posOcupadas[6] == true) && (posOcupadas[11] && true) && (posOcupadas[10] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[8] == true) && (posOcupadas[12] == true) && (posOcupadas[9] && true) && (posOcupadas[13] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[13] == true) && (posOcupadas[14] == true) && (posOcupadas[9] && true) && (posOcupadas[10] == true) ) {
+                gano = true
+            }
+            if ((posOcupadas[11] == true) && (posOcupadas[14] == true) && (posOcupadas[15] && true) && (posOcupadas[10] == true) ) {
                 gano = true
             }
         }
         
-        //checar cuadro grande
-        //cuetro esquinas
-        if modoGanar == "Cuadro Grande"{
-            if ((posOcupadas[0] == true) && (posOcupadas[3] == true) && (posOcupadas[12] && true) && (posOcupadas[15] == true) ) {
+        //checar cuadro grande (esquinas)
+        if (listaComoGanar[4] == true) {
+            if ((posOcupadas[0] == true) && (posOcupadas[3] == true)  && (posOcupadas[12] && true) && (posOcupadas[15] == true) ) {
                 gano = true
             }
         }
+        
+        // checar llena
+        if (listaComoGanar[5] == true) {
+            if ((posOcupadas[0] == true) && (posOcupadas[1] == true)  && (posOcupadas[2] == true) && (posOcupadas[3] == true) && (posOcupadas[4] == true) && (posOcupadas[5] == true)  && (posOcupadas[6] == true) && (posOcupadas[7] == true) && (posOcupadas[8] == true) && (posOcupadas[9] == true)  && (posOcupadas[10] == true) && (posOcupadas[11] == true) && (posOcupadas[12] == true) && (posOcupadas[13] == true)  && (posOcupadas[14] == true) && (posOcupadas[15] == true)) {
+                gano = true
+            }
+        }
+        
         
     }
     
@@ -208,4 +298,27 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
      }
      */
     
+}
+
+extension  ViewControllerJugador: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+       
+        let size = CGSize(width: collectionView.frame.width / 4, height: collectionView.frame.height / 4)
+        return size
+        
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView,
+//                        layout collectionViewLayout: UICollectionViewLayout,
+//                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+//        return 1.0
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout
+//        collectionViewLayout: UICollectionViewLayout,
+//                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        return 1.0
+//    }
 }

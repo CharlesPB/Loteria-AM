@@ -12,10 +12,14 @@ class ViewControllerDarCarta: UIViewController {
     
     @IBOutlet weak var imgCarta: UIImageView!
     
-    var listaCartas = [String](arrayLiteral: "taza", "baston", "pastillero", "jarabe", "cafe", "termometro", "cama", "libros", "juegos de mesa", "enfermero", "inyeccion", "pastillas", "suero", "reloj", "lentes", "bolsa", "dentadura", "sillon", "lupa", "pijamas", "cepillo", "maletin", "pantunflas", "bufanda", "guantes", "camion", "fotos", "camara", "sombrero")
+    var listaCartas = [String](arrayLiteral: "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49")
     
     var listaCartasDadas = [String]()
     
+    let selection = UISelectionFeedbackGenerator()
+    
+    
+    //  hhh
     
     var index : Int = 0
     
@@ -32,7 +36,7 @@ class ViewControllerDarCarta: UIViewController {
         listaCartas.shuffle()
         imgCarta.image = UIImage(named: listaCartas[index])
         listaCartasDadas.append(listaCartas[index])
-        listaCartas.remove(at: index)
+        //listaCartas.remove(at: index)
         index = index + 1
         
         
@@ -44,11 +48,13 @@ class ViewControllerDarCarta: UIViewController {
         if index < listaCartas.count{
             imgCarta.image = UIImage(named: listaCartas[index])
             listaCartasDadas.append(listaCartas[index])
-            listaCartas.remove(at: index)
+            //listaCartas.remove(at: index)
             index = index + 1
+            selection.selectionChanged()
         }
     }
     
+ 
     
     
     // MARK: - Navigation
@@ -57,8 +63,10 @@ class ViewControllerDarCarta: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        let vistaCartasDadas = segue.destination as! TableViewControllerCartasDadas
+        let vistaCartasDadas = segue.destination as! ViewControllerCartasDadas
         vistaCartasDadas.listaCartasYaDadas = listaCartasDadas
+        //vistaCartasDadas.listaCartasYaDadas = listaCartas
+        
     }
     
 
