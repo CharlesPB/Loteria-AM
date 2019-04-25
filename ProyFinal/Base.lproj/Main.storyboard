@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HDU-Il-prt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HDU-Il-prt">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,54 +18,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD7-4U-3ga">
-                                <rect key="frame" x="78" y="274" width="258" height="51"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <state key="normal" title="Modo dar la carta"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD7-4U-3ga">
+                                <rect key="frame" x="25" y="399" width="171" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="modocarta"/>
                                 <connections>
                                     <segue destination="QhY-JH-zMl" kind="show" identifier="modoDarCarta" id="yw5-Ch-ksI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dem-SM-Frv">
-                                <rect key="frame" x="104" y="405" width="206" height="51"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <state key="normal" title="Modo jugador"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dem-SM-Frv">
+                                <rect key="frame" x="221" y="399" width="171" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="modojugador"/>
                                 <connections>
                                     <segue destination="tcR-3F-1vg" kind="show" identifier="" id="Ygh-e9-MBf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Lotería" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxZ-nk-pS0">
-                                <rect key="frame" x="134.5" y="120" width="145" height="54"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" text="Lotería" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxZ-nk-pS0">
+                                <rect key="frame" x="134.5" y="120" width="145" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPj-1Y-719">
-                                <rect key="frame" x="104.5" y="536" width="205" height="213"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <state key="normal" title="¿Cómo jugar?"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPj-1Y-719">
+                                <rect key="frame" x="25" y="639" width="171" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="comojugar"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJe-aH-roc">
+                                <rect key="frame" x="221" y="639" width="171" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="creditos"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loteria" translatesAutoresizingMaskIntoConstraints="NO" id="peQ-9i-uLZ">
+                                <rect key="frame" x="25" y="120" width="367" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.8786980324" green="0.86442447840000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="UxZ-nk-pS0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6IP-IJ-huV"/>
-                            <constraint firstItem="qPj-1Y-719" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6qq-hw-iSx"/>
-                            <constraint firstItem="Dem-SM-Frv" firstAttribute="top" secondItem="KD7-4U-3ga" secondAttribute="bottom" constant="80" id="K2X-gF-9iV"/>
-                            <constraint firstItem="qPj-1Y-719" firstAttribute="top" secondItem="Dem-SM-Frv" secondAttribute="bottom" constant="80" id="NA8-1K-IYH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qPj-1Y-719" secondAttribute="bottom" constant="113" id="X2X-IC-2hC"/>
-                            <constraint firstItem="Dem-SM-Frv" firstAttribute="top" secondItem="KD7-4U-3ga" secondAttribute="bottom" constant="80" id="Yi3-Lb-x9d"/>
-                            <constraint firstItem="UxZ-nk-pS0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="iNd-EF-Wn0"/>
-                            <constraint firstItem="Dem-SM-Frv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oi9-vd-3HD"/>
-                            <constraint firstItem="KD7-4U-3ga" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qmh-QT-Ex4"/>
-                            <constraint firstItem="KD7-4U-3ga" firstAttribute="top" secondItem="UxZ-nk-pS0" secondAttribute="bottom" constant="100" id="vg8-U0-5xw"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="9TZ-Ag-sxz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1180" y="45.42728635682159"/>
+            <point key="canvasLocation" x="1179.7101449275362" y="44.866071428571423"/>
         </scene>
         <!--View Controller Jugador-->
         <scene sceneID="wsq-vd-nPx">
@@ -326,12 +324,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="comojugar" width="304" height="265"/>
+        <image name="creditos" width="341" height="312"/>
         <image name="cuadroChico" width="572" height="141"/>
         <image name="cuadroGrande" width="575" height="141"/>
         <image name="diagonal" width="575" height="139"/>
         <image name="ficha" width="464" height="463"/>
         <image name="horizontal" width="572" height="139"/>
         <image name="llena" width="575" height="141"/>
+        <image name="loteria" width="499" height="290"/>
+        <image name="modocarta" width="299" height="267"/>
+        <image name="modojugador" width="313" height="263"/>
         <image name="verticalCheck" width="575" height="143"/>
     </resources>
 </document>
