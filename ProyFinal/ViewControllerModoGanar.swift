@@ -31,12 +31,12 @@ class ViewControllerModoGanar: UIViewController {
         if (sender.tag == 0) {
             // Vertical check
             if (!listaModoGanarSeleccionado[sender.tag]) {
-            sender.setBackgroundImage(UIImage(named: "verticalCheck"), for: .normal)
+            sender.setBackgroundImage(UIImage(named: "v1"), for: .normal)
                 listaModoGanarSeleccionado[sender.tag] = true
             }
             // Vertical uncheck
             else {
-                sender.setBackgroundImage(UIImage(named: "vertical"), for: .normal)
+                sender.setBackgroundImage(UIImage(named: "v2"), for: .normal)
                 listaModoGanarSeleccionado[sender.tag] = false
             }
         }
@@ -45,12 +45,12 @@ class ViewControllerModoGanar: UIViewController {
             if (sender.tag == 1) {
                 // Horizontal check
                 if (!listaModoGanarSeleccionado[sender.tag]) {
-                    sender.setBackgroundImage(UIImage(named: "horizontalCheck"), for: .normal)
+                    sender.setBackgroundImage(UIImage(named: "h2"), for: .normal)
                     listaModoGanarSeleccionado[sender.tag] = true
                 }
                     // Horizontal uncheck
                 else {
-                    sender.setBackgroundImage(UIImage(named: "horizontal"), for: .normal)
+                    sender.setBackgroundImage(UIImage(named: "h1"), for: .normal)
                     listaModoGanarSeleccionado[sender.tag] = false
                 }
             }
@@ -59,12 +59,12 @@ class ViewControllerModoGanar: UIViewController {
                 if (sender.tag == 2) {
                     // Diagonal check
                     if (!listaModoGanarSeleccionado[sender.tag]) {
-                        sender.setBackgroundImage(UIImage(named: "diagonalCheck"), for: .normal)
+                        sender.setBackgroundImage(UIImage(named: "d2"), for: .normal)
                         listaModoGanarSeleccionado[sender.tag] = true
                     }
                         // Diagonal uncheck
                     else {
-                        sender.setBackgroundImage(UIImage(named: "diagonal"), for: .normal)
+                        sender.setBackgroundImage(UIImage(named: "d1"), for: .normal)
                         listaModoGanarSeleccionado[sender.tag] = false
                     }
                 }
@@ -73,12 +73,12 @@ class ViewControllerModoGanar: UIViewController {
                     if (sender.tag == 3) {
                         // Cuadro chico check
                         if (!listaModoGanarSeleccionado[sender.tag]) {
-                            sender.setBackgroundImage(UIImage(named: "cuadroChicoCheck"), for: .normal)
+                            sender.setBackgroundImage(UIImage(named: "cc2"), for: .normal)
                             listaModoGanarSeleccionado[sender.tag] = true
                         }
                             // Cuadro chico uncheck
                         else {
-                            sender.setBackgroundImage(UIImage(named: "cuadroChico"), for: .normal)
+                            sender.setBackgroundImage(UIImage(named: "cc1"), for: .normal)
                             listaModoGanarSeleccionado[sender.tag] = false
                         }
                     }
@@ -87,12 +87,12 @@ class ViewControllerModoGanar: UIViewController {
                         if (sender.tag == 4) {
                             // Cuadro grande check
                             if (!listaModoGanarSeleccionado[sender.tag]) {
-                                sender.setBackgroundImage(UIImage(named: "cuadroGrandeCheck"), for: .normal)
+                                sender.setBackgroundImage(UIImage(named: "cg2"), for: .normal)
                                 listaModoGanarSeleccionado[sender.tag] = true
                             }
                                 // Cuadro grande uncheck
                             else {
-                                sender.setBackgroundImage(UIImage(named: "cuadroGrande"), for: .normal)
+                                sender.setBackgroundImage(UIImage(named: "cg1"), for: .normal)
                                 listaModoGanarSeleccionado[sender.tag] = false
                             }
                         }
@@ -101,12 +101,12 @@ class ViewControllerModoGanar: UIViewController {
                             if (sender.tag == 5) {
                                 // Llena check
                                 if (!listaModoGanarSeleccionado[sender.tag]) {
-                                    sender.setBackgroundImage(UIImage(named: "llenaCheck"), for: .normal)
+                                    sender.setBackgroundImage(UIImage(named: "tl2"), for: .normal)
                                     listaModoGanarSeleccionado[sender.tag] = true
                                 }
                                     // Llena uncheck
                                 else {
-                                    sender.setBackgroundImage(UIImage(named: "llena"), for: .normal)
+                                    sender.setBackgroundImage(UIImage(named: "tl1"), for: .normal)
                                     listaModoGanarSeleccionado[sender.tag] = false
                                 }
                             }

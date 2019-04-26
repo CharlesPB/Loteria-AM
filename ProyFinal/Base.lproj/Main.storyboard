@@ -171,7 +171,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvV-lW-zSk">
                                 <rect key="frame" x="51" y="100" width="273" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="verticalCheck"/>
+                                <state key="normal" backgroundImage="v1"/>
                                 <connections>
                                     <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="rwP-rM-C6k"/>
                                 </connections>
@@ -179,7 +179,7 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpO-mh-WRN">
                                 <rect key="frame" x="51" y="170" width="273" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="horizontal"/>
+                                <state key="normal" backgroundImage="h1"/>
                                 <connections>
                                     <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="Pqu-da-BZl"/>
                                 </connections>
@@ -187,7 +187,7 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eba-AW-yCk">
                                 <rect key="frame" x="51" y="240" width="273" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="diagonal"/>
+                                <state key="normal" backgroundImage="d1"/>
                                 <connections>
                                     <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="iBn-dz-M1h"/>
                                 </connections>
@@ -195,7 +195,7 @@
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6T-c9-CiG">
                                 <rect key="frame" x="51" y="310" width="273" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="cuadroChico"/>
+                                <state key="normal" backgroundImage="cc1"/>
                                 <connections>
                                     <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="uIM-0q-9OE"/>
                                 </connections>
@@ -203,7 +203,7 @@
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaW-p9-Gg7">
                                 <rect key="frame" x="51" y="380" width="273" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="cuadroGrande"/>
+                                <state key="normal" backgroundImage="cg1"/>
                                 <connections>
                                     <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="3gZ-iK-bTH"/>
                                 </connections>
@@ -211,7 +211,7 @@
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEu-Ro-mc6">
                                 <rect key="frame" x="51" y="450" width="273" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="llena"/>
+                                <state key="normal" backgroundImage="tl1"/>
                                 <connections>
                                     <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="M05-pb-wSC"/>
                                 </connections>
@@ -324,17 +324,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cc1" width="575" height="172"/>
+        <image name="cg1" width="575" height="172"/>
         <image name="comojugar" width="304" height="265"/>
         <image name="creditos" width="341" height="312"/>
-        <image name="cuadroChico" width="572" height="141"/>
-        <image name="cuadroGrande" width="575" height="141"/>
-        <image name="diagonal" width="575" height="139"/>
+        <image name="d1" width="575" height="164"/>
         <image name="ficha" width="464" height="463"/>
-        <image name="horizontal" width="572" height="139"/>
-        <image name="llena" width="575" height="141"/>
-        <image name="loteria" width="499" height="290"/>
+        <image name="h1" width="575" height="164"/>
+        <image name="loteria" width="327" height="191"/>
         <image name="modocarta" width="299" height="267"/>
         <image name="modojugador" width="313" height="263"/>
-        <image name="verticalCheck" width="575" height="143"/>
+        <image name="tl1" width="575" height="173"/>
+        <image name="v1" width="576" height="163"/>
     </resources>
 </document>
