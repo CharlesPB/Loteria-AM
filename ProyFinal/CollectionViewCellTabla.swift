@@ -12,6 +12,7 @@ import UIKit
 class CollectionViewCellTabla: UICollectionViewCell {
     @IBOutlet weak var btFicha: UIButton!
     
-  
+    @IBOutlet weak var fondo: UIView!
+    
     
 }

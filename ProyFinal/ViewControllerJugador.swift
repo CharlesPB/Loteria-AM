@@ -66,14 +66,22 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collCell", for: indexPath) as! CollectionViewCellTabla
-    
         
-        // Si está ocupada la carta, se pone la ficha
+       
+        cell.fondo.frame.size.width = collectionView.frame.width / 4
+        cell.fondo.frame.size.height = collectionView.frame.height / 4
+        
+        cell.fondo.bringSubviewToFront(cell.btFicha)
+        
+        // Si está ocupada la carta, se pone la ficha y se pone gris
         if (posOcupadas[indexPath.row] == true) {
             cell.btFicha.isHidden = false
+            cell.fondo.isHidden = false
+            cell.fondo.bringSubviewToFront(cell.btFicha)
         }
         else { // Si no está ocupada, se quita la ficha
             cell.btFicha.isHidden = true
+            cell.fondo.isHidden = true
         }
         
         
