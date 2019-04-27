@@ -31,12 +31,12 @@ class ViewControllerModoGanar: UIViewController {
         if (sender.tag == 0) {
             // Vertical check
             if (!listaModoGanarSeleccionado[sender.tag]) {
-            sender.setBackgroundImage(UIImage(named: "v1"), for: .normal)
+            sender.setBackgroundImage(UIImage(named: "v2"), for: .normal)
                 listaModoGanarSeleccionado[sender.tag] = true
             }
             // Vertical uncheck
             else {
-                sender.setBackgroundImage(UIImage(named: "v2"), for: .normal)
+                sender.setBackgroundImage(UIImage(named: "v1"), for: .normal)
                 listaModoGanarSeleccionado[sender.tag] = false
             }
         }

@@ -96,7 +96,7 @@
                                                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KG-y4-1zS">
-                                                    <rect key="frame" x="12.999999999999545" y="24.795345154744609" width="43" height="42.000000000000057"/>
+                                                    <rect key="frame" x="13" y="25" width="43" height="42"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" backgroundImage="ficha"/>
                                                     <state key="disabled" backgroundImage="ficha"/>
@@ -177,7 +177,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvV-lW-zSk">
                                 <rect key="frame" x="51" y="100" width="273" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="v1"/>
+                                <state key="normal" backgroundImage="v2"/>
                                 <connections>
                                     <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="rwP-rM-C6k"/>
                                 </connections>
@@ -341,6 +341,6 @@
         <image name="modocarta" width="299" height="267"/>
         <image name="modojugador" width="313" height="263"/>
         <image name="tl1" width="575" height="173"/>
-        <image name="v1" width="576" height="163"/>
+        <image name="v2" width="576" height="164"/>
     </resources>
 </document>
