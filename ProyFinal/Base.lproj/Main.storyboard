@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HDU-Il-prt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HDU-Il-prt">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,45 +18,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD7-4U-3ga">
-                                <rect key="frame" x="25" y="399" width="171" height="171"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD7-4U-3ga">
+                                <rect key="frame" x="25" y="399" width="169.5" height="206"/>
                                 <state key="normal" image="modocarta"/>
                                 <connections>
                                     <segue destination="QhY-JH-zMl" kind="show" identifier="modoDarCarta" id="yw5-Ch-ksI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dem-SM-Frv">
-                                <rect key="frame" x="221" y="399" width="171" height="171"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Lotería" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxZ-nk-pS0">
+                                <rect key="frame" x="134.5" y="120" width="145" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPj-1Y-719">
+                                <rect key="frame" x="25" y="674" width="169.5" height="206"/>
+                                <state key="normal" image="comojugar"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJe-aH-roc">
+                                <rect key="frame" x="219.5" y="674" width="169.5" height="206"/>
+                                <state key="normal" title="Button" image="creditos"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loteria" translatesAutoresizingMaskIntoConstraints="NO" id="peQ-9i-uLZ">
+                                <rect key="frame" x="43.5" y="120" width="327" height="206"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="peQ-9i-uLZ" secondAttribute="height" multiplier="327:206" id="RI3-yn-uy8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dem-SM-Frv">
+                                <rect key="frame" x="219.5" y="399" width="169.5" height="206"/>
                                 <state key="normal" image="modojugador"/>
                                 <connections>
                                     <segue destination="tcR-3F-1vg" kind="show" identifier="" id="Ygh-e9-MBf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" text="Lotería" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxZ-nk-pS0">
-                                <rect key="frame" x="134.5" y="120" width="145" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPj-1Y-719">
-                                <rect key="frame" x="25" y="639" width="171" height="171"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <state key="normal" image="comojugar"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJe-aH-roc">
-                                <rect key="frame" x="221" y="639" width="171" height="171"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <state key="normal" title="Button" image="creditos"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loteria" translatesAutoresizingMaskIntoConstraints="NO" id="peQ-9i-uLZ">
-                                <rect key="frame" x="25" y="120" width="367" height="206"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dem-SM-Frv" firstAttribute="leading" secondItem="KD7-4U-3ga" secondAttribute="trailing" constant="25" id="2MB-d5-2ce"/>
+                            <constraint firstItem="UxZ-nk-pS0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="43W-zt-UNf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SJe-aH-roc" secondAttribute="trailing" constant="25" id="4Ms-Bv-Te4"/>
+                            <constraint firstItem="SJe-aH-roc" firstAttribute="height" secondItem="Dem-SM-Frv" secondAttribute="height" id="6vZ-iP-kQi"/>
+                            <constraint firstItem="peQ-9i-uLZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43.5" id="79f-kl-LMM"/>
+                            <constraint firstItem="KD7-4U-3ga" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="8Hp-8k-eAs"/>
+                            <constraint firstItem="UxZ-nk-pS0" firstAttribute="top" secondItem="peQ-9i-uLZ" secondAttribute="top" id="9oR-0v-qi9"/>
+                            <constraint firstItem="qPj-1Y-719" firstAttribute="width" secondItem="Dem-SM-Frv" secondAttribute="width" id="BM3-oa-s8F"/>
+                            <constraint firstItem="SJe-aH-roc" firstAttribute="leading" secondItem="qPj-1Y-719" secondAttribute="trailing" constant="25" id="D5N-7g-BkN"/>
+                            <constraint firstItem="KD7-4U-3ga" firstAttribute="width" secondItem="Dem-SM-Frv" secondAttribute="width" id="Do5-KU-S3B"/>
+                            <constraint firstAttribute="bottom" secondItem="SJe-aH-roc" secondAttribute="bottom" constant="16" id="Dwa-gm-uED"/>
+                            <constraint firstItem="Dem-SM-Frv" firstAttribute="top" secondItem="peQ-9i-uLZ" secondAttribute="bottom" constant="73" id="ES6-7a-Brf"/>
+                            <constraint firstItem="SJe-aH-roc" firstAttribute="leading" secondItem="qPj-1Y-719" secondAttribute="trailing" constant="25" id="IdK-DL-Qe7"/>
+                            <constraint firstItem="KD7-4U-3ga" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="JNm-Ne-65Z"/>
+                            <constraint firstItem="SJe-aH-roc" firstAttribute="top" secondItem="Dem-SM-Frv" secondAttribute="bottom" constant="69" id="JOa-sU-pAT"/>
+                            <constraint firstItem="peQ-9i-uLZ" firstAttribute="height" secondItem="Dem-SM-Frv" secondAttribute="height" id="KXv-2G-5fF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dem-SM-Frv" secondAttribute="trailing" constant="25" id="Kb5-PU-FkR"/>
+                            <constraint firstItem="KD7-4U-3ga" firstAttribute="top" secondItem="peQ-9i-uLZ" secondAttribute="bottom" constant="73" id="O8t-zx-YkA"/>
+                            <constraint firstItem="SJe-aH-roc" firstAttribute="leading" secondItem="qPj-1Y-719" secondAttribute="trailing" constant="25" id="Pgu-6n-ct3"/>
+                            <constraint firstItem="qPj-1Y-719" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="SfD-O0-fYY"/>
+                            <constraint firstItem="qPj-1Y-719" firstAttribute="top" secondItem="KD7-4U-3ga" secondAttribute="bottom" constant="69" id="UrY-je-Xhw"/>
+                            <constraint firstItem="SJe-aH-roc" firstAttribute="top" secondItem="Dem-SM-Frv" secondAttribute="bottom" constant="69" id="VLj-LG-gvS"/>
+                            <constraint firstItem="UxZ-nk-pS0" firstAttribute="centerX" secondItem="peQ-9i-uLZ" secondAttribute="centerX" id="VQB-ey-ERR"/>
+                            <constraint firstItem="Dem-SM-Frv" firstAttribute="leading" secondItem="KD7-4U-3ga" secondAttribute="trailing" constant="25" id="VnE-pH-Ns2"/>
+                            <constraint firstAttribute="bottom" secondItem="qPj-1Y-719" secondAttribute="bottom" constant="16" id="Y4D-6h-B1G"/>
+                            <constraint firstItem="qPj-1Y-719" firstAttribute="height" secondItem="Dem-SM-Frv" secondAttribute="height" id="ZhG-3z-y69"/>
+                            <constraint firstItem="SJe-aH-roc" firstAttribute="top" secondItem="Dem-SM-Frv" secondAttribute="bottom" constant="69" id="aQp-gr-vi4"/>
+                            <constraint firstItem="qPj-1Y-719" firstAttribute="top" secondItem="KD7-4U-3ga" secondAttribute="bottom" constant="69" id="aUO-na-0cc"/>
+                            <constraint firstItem="qPj-1Y-719" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="bXm-4f-RlR"/>
+                            <constraint firstItem="SJe-aH-roc" firstAttribute="top" secondItem="Dem-SM-Frv" secondAttribute="bottom" constant="69" id="dcG-Te-p57"/>
+                            <constraint firstItem="peQ-9i-uLZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dkT-fp-RNc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="peQ-9i-uLZ" secondAttribute="trailing" constant="43.5" id="fql-U0-44F"/>
+                            <constraint firstItem="peQ-9i-uLZ" firstAttribute="height" secondItem="Dem-SM-Frv" secondAttribute="height" id="gbn-y9-eSE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SJe-aH-roc" secondAttribute="trailing" constant="25" id="hAs-HV-Er5"/>
+                            <constraint firstItem="Dem-SM-Frv" firstAttribute="leading" secondItem="KD7-4U-3ga" secondAttribute="trailing" constant="25" id="hdj-sa-qVd"/>
+                            <constraint firstItem="SJe-aH-roc" firstAttribute="width" secondItem="Dem-SM-Frv" secondAttribute="width" id="lhK-N9-4kQ"/>
+                            <constraint firstItem="SJe-aH-roc" firstAttribute="leading" secondItem="qPj-1Y-719" secondAttribute="trailing" constant="25" id="o0q-NP-uFU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dem-SM-Frv" secondAttribute="trailing" constant="25" id="obZ-Tz-oM4"/>
+                            <constraint firstItem="qPj-1Y-719" firstAttribute="top" secondItem="KD7-4U-3ga" secondAttribute="bottom" constant="69" id="sL1-OY-7lS"/>
+                            <constraint firstItem="Dem-SM-Frv" firstAttribute="leading" secondItem="KD7-4U-3ga" secondAttribute="trailing" constant="25" id="v2u-XL-hGi"/>
+                            <constraint firstItem="KD7-4U-3ga" firstAttribute="top" secondItem="peQ-9i-uLZ" secondAttribute="bottom" constant="73" id="y7K-fZ-eU9"/>
+                            <constraint firstItem="KD7-4U-3ga" firstAttribute="height" secondItem="Dem-SM-Frv" secondAttribute="height" id="zBV-Qe-bn6"/>
+                            <constraint firstItem="qPj-1Y-719" firstAttribute="top" secondItem="KD7-4U-3ga" secondAttribute="bottom" constant="69" id="zHy-fJ-kJT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="9TZ-Ag-sxz"/>
@@ -182,49 +224,43 @@
                                     <segue destination="ppy-Ur-GwT" kind="show" id="mwL-w9-yMz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvV-lW-zSk">
-                                <rect key="frame" x="51" y="100" width="273" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvV-lW-zSk">
+                                <rect key="frame" x="51" y="106" width="326" height="101"/>
                                 <state key="normal" backgroundImage="v2"/>
                                 <connections>
                                     <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="rwP-rM-C6k"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpO-mh-WRN">
-                                <rect key="frame" x="51" y="170" width="273" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpO-mh-WRN">
+                                <rect key="frame" x="51" y="215" width="326" height="101"/>
                                 <state key="normal" backgroundImage="h1"/>
                                 <connections>
                                     <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="Pqu-da-BZl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eba-AW-yCk">
-                                <rect key="frame" x="51" y="240" width="273" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eba-AW-yCk">
+                                <rect key="frame" x="51" y="324" width="326" height="101"/>
                                 <state key="normal" backgroundImage="d1"/>
                                 <connections>
                                     <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="iBn-dz-M1h"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6T-c9-CiG">
-                                <rect key="frame" x="51" y="310" width="273" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6T-c9-CiG">
+                                <rect key="frame" x="51" y="433" width="326" height="101"/>
                                 <state key="normal" backgroundImage="cc1"/>
                                 <connections>
                                     <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="uIM-0q-9OE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaW-p9-Gg7">
-                                <rect key="frame" x="51" y="380" width="273" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaW-p9-Gg7">
+                                <rect key="frame" x="51" y="542" width="326" height="101"/>
                                 <state key="normal" backgroundImage="cg1"/>
                                 <connections>
                                     <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="3gZ-iK-bTH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEu-Ro-mc6">
-                                <rect key="frame" x="51" y="450" width="273" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEu-Ro-mc6">
+                                <rect key="frame" x="51" y="651" width="326" height="101"/>
                                 <state key="normal" backgroundImage="tl1"/>
                                 <connections>
                                     <action selector="seleccionaModoGanarWithSender:" destination="tcR-3F-1vg" eventType="touchUpInside" id="M05-pb-wSC"/>
@@ -233,7 +269,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Eba-AW-yCk" firstAttribute="height" secondItem="OvV-lW-zSk" secondAttribute="height" id="9WW-VW-Gdz"/>
+                            <constraint firstItem="DpO-mh-WRN" firstAttribute="height" secondItem="OvV-lW-zSk" secondAttribute="height" id="Bv6-CQ-gc0"/>
+                            <constraint firstItem="x6T-c9-CiG" firstAttribute="height" secondItem="OvV-lW-zSk" secondAttribute="height" id="H18-4h-Tev"/>
+                            <constraint firstItem="DpO-mh-WRN" firstAttribute="width" secondItem="OvV-lW-zSk" secondAttribute="width" id="LlP-Sg-xJb"/>
                             <constraint firstItem="1Ck-8r-nlW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mYv-x9-GiW" secondAttribute="leading" symbolic="YES" id="Oyq-MH-PwL"/>
+                            <constraint firstItem="iEu-Ro-mc6" firstAttribute="width" secondItem="OvV-lW-zSk" secondAttribute="width" id="Qxt-x8-Aur"/>
+                            <constraint firstItem="Eba-AW-yCk" firstAttribute="width" secondItem="OvV-lW-zSk" secondAttribute="width" id="XLb-7x-PMc"/>
+                            <constraint firstItem="GaW-p9-Gg7" firstAttribute="height" secondItem="OvV-lW-zSk" secondAttribute="height" id="XR1-ia-rta"/>
+                            <constraint firstItem="GaW-p9-Gg7" firstAttribute="width" secondItem="OvV-lW-zSk" secondAttribute="width" id="ZB5-x8-hx4"/>
+                            <constraint firstItem="x6T-c9-CiG" firstAttribute="width" secondItem="OvV-lW-zSk" secondAttribute="width" id="bIP-cn-u5J"/>
                             <constraint firstItem="mYv-x9-GiW" firstAttribute="trailing" secondItem="1Ck-8r-nlW" secondAttribute="trailing" constant="20" id="fP6-Sw-Da8"/>
                             <constraint firstItem="mYv-x9-GiW" firstAttribute="bottom" secondItem="1Ck-8r-nlW" secondAttribute="bottom" constant="17" id="t2W-Qj-Kp0"/>
                         </constraints>
@@ -242,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zN-uT-smV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122.4000000000001" y="464.6176911544228"/>
+            <point key="canvasLocation" x="2121.739130434783" y="464.0625"/>
         </scene>
         <!--View Controller Dar Carta-->
         <scene sceneID="g5U-v2-mbk">
