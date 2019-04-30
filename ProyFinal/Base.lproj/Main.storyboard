@@ -38,6 +38,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJe-aH-roc">
                                 <rect key="frame" x="219.5" y="674" width="169.5" height="206"/>
                                 <state key="normal" title="Button" image="creditos"/>
+                                <connections>
+                                    <segue destination="nbJ-zs-dfg" kind="show" id="9eq-kw-xVQ"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loteria" translatesAutoresizingMaskIntoConstraints="NO" id="peQ-9i-uLZ">
                                 <rect key="frame" x="43.5" y="120" width="327" height="206"/>
@@ -225,6 +228,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1pU-lb-OIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3279.7101449275365" y="465.40178571428567"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rFy-N7-LO6">
+            <objects>
+                <viewController id="nbJ-zs-dfg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kQG-gN-XCE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Créditos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKE-eY-KMk">
+                                <rect key="frame" x="123" y="148" width="168.5" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="creditostexto" translatesAutoresizingMaskIntoConstraints="NO" id="7Ua-tg-bTN">
+                                <rect key="frame" x="28" y="245" width="358" height="367"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LKE-eY-KMk" firstAttribute="top" secondItem="NjE-oP-8rO" secondAttribute="top" constant="60" id="03g-J1-JfV"/>
+                            <constraint firstItem="7Ua-tg-bTN" firstAttribute="leading" secondItem="NjE-oP-8rO" secondAttribute="leading" constant="28" id="NcZ-r1-1hv"/>
+                            <constraint firstItem="LKE-eY-KMk" firstAttribute="centerX" secondItem="kQG-gN-XCE" secondAttribute="centerX" id="OZf-rD-lWn"/>
+                            <constraint firstItem="NjE-oP-8rO" firstAttribute="trailing" secondItem="7Ua-tg-bTN" secondAttribute="trailing" constant="28" id="QSr-AL-zKC"/>
+                            <constraint firstItem="NjE-oP-8rO" firstAttribute="bottom" secondItem="7Ua-tg-bTN" secondAttribute="bottom" constant="250" id="ghK-NT-BId"/>
+                            <constraint firstItem="7Ua-tg-bTN" firstAttribute="top" secondItem="LKE-eY-KMk" secondAttribute="bottom" constant="40" id="wmx-Z1-fBQ"/>
+                            <constraint firstItem="7Ua-tg-bTN" firstAttribute="top" secondItem="LKE-eY-KMk" secondAttribute="bottom" constant="40" id="x84-fE-DlL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NjE-oP-8rO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhU-vh-9ci" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1394.2028985507247" y="774.77678571428567"/>
         </scene>
         <!--View Controller Modo Ganar-->
         <scene sceneID="SUR-5B-CQF">
@@ -470,6 +508,7 @@
         <image name="cg1" width="575" height="172"/>
         <image name="comojugar" width="304" height="265"/>
         <image name="creditos" width="341" height="312"/>
+        <image name="creditostexto" width="927" height="711"/>
         <image name="d1" width="575" height="164"/>
         <image name="ficha" width="464" height="463"/>
         <image name="h1" width="575" height="164"/>
