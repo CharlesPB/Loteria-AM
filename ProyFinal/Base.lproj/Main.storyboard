@@ -161,10 +161,12 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSq-k2-3zE">
-                                <rect key="frame" x="20" y="715" width="177" height="100"/>
+                                <rect key="frame" x="23" y="715" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="PQd-xO-PPP"/>
-                                    <constraint firstAttribute="height" constant="100" id="xes-ex-Ubn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="9w0-wM-GZN"/>
+                                    <constraint firstAttribute="height" constant="100" id="Arb-mg-yXz"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="PWY-fn-Zv1"/>
+                                    <constraint firstAttribute="width" constant="100" id="gza-DU-PEs"/>
                                 </constraints>
                                 <state key="normal" title="Limpiar tabla" image="limpiartabla"/>
                                 <connections>
@@ -172,21 +174,23 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Limpiar Tabla" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WJ-pS-LDg">
-                                <rect key="frame" x="20" y="825" width="177" height="27"/>
+                                <rect key="frame" x="10" y="825" width="126" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nueva Tabla" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhb-P9-AQp">
-                                <rect key="frame" x="217" y="825" width="177" height="27"/>
+                                <rect key="frame" x="287" y="825" width="117" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hax-Zh-27l">
-                                <rect key="frame" x="217" y="715" width="177" height="100"/>
+                                <rect key="frame" x="295.5" y="715" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="y4L-wC-dBi"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="2PQ-jR-8kw"/>
+                                    <constraint firstAttribute="height" constant="100" id="Jnm-GN-ZG5"/>
+                                    <constraint firstAttribute="width" constant="100" id="yrO-1D-QlX"/>
                                 </constraints>
                                 <state key="normal" title="Nueva Tabla" image="nuevatabla"/>
                                 <connections>
@@ -196,27 +200,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hax-Zh-27l" firstAttribute="leading" secondItem="GSq-k2-3zE" secondAttribute="trailing" constant="20" id="5P5-xk-0oA"/>
-                            <constraint firstItem="k6o-Hl-icz" firstAttribute="trailing" secondItem="hax-Zh-27l" secondAttribute="trailing" constant="20" id="5ak-mj-abF"/>
-                            <constraint firstItem="hax-Zh-27l" firstAttribute="top" secondItem="bhm-90-abX" secondAttribute="bottom" constant="50" id="7Dk-QO-Yhy"/>
-                            <constraint firstItem="rhb-P9-AQp" firstAttribute="top" secondItem="hax-Zh-27l" secondAttribute="bottom" constant="10" id="BSk-C9-fBw"/>
+                            <constraint firstItem="rhb-P9-AQp" firstAttribute="top" secondItem="hax-Zh-27l" secondAttribute="bottom" constant="10" id="39z-GU-yXe"/>
+                            <constraint firstItem="hax-Zh-27l" firstAttribute="top" secondItem="bhm-90-abX" secondAttribute="bottom" constant="50" id="3Ym-vn-KAS"/>
+                            <constraint firstItem="rhb-P9-AQp" firstAttribute="centerX" secondItem="hax-Zh-27l" secondAttribute="centerX" id="4pR-5w-EYa"/>
+                            <constraint firstItem="k6o-Hl-icz" firstAttribute="bottom" secondItem="3WJ-pS-LDg" secondAttribute="bottom" constant="10" id="BWs-9u-w0i"/>
                             <constraint firstItem="k6o-Hl-icz" firstAttribute="trailing" secondItem="bhm-90-abX" secondAttribute="trailing" constant="20" id="D6X-hG-HjH"/>
-                            <constraint firstItem="GSq-k2-3zE" firstAttribute="top" secondItem="bhm-90-abX" secondAttribute="bottom" constant="50" id="GMe-hc-zRJ"/>
                             <constraint firstItem="bhm-90-abX" firstAttribute="top" secondItem="k6o-Hl-icz" secondAttribute="top" constant="20" id="GRN-OH-Wgo"/>
                             <constraint firstItem="bhm-90-abX" firstAttribute="leading" secondItem="k6o-Hl-icz" secondAttribute="leading" constant="20" id="JhO-I5-Osp"/>
-                            <constraint firstItem="rhb-P9-AQp" firstAttribute="top" secondItem="hax-Zh-27l" secondAttribute="bottom" constant="10" id="KfZ-aS-H3R"/>
-                            <constraint firstItem="3WJ-pS-LDg" firstAttribute="top" secondItem="GSq-k2-3zE" secondAttribute="bottom" constant="10" id="NCz-Z0-kCJ"/>
-                            <constraint firstItem="hax-Zh-27l" firstAttribute="height" secondItem="GSq-k2-3zE" secondAttribute="height" id="Sqn-Pz-XpZ"/>
-                            <constraint firstItem="rhb-P9-AQp" firstAttribute="centerX" secondItem="hax-Zh-27l" secondAttribute="centerX" id="WVm-tF-Ou2"/>
-                            <constraint firstItem="hax-Zh-27l" firstAttribute="leading" secondItem="GSq-k2-3zE" secondAttribute="trailing" constant="20" id="cdJ-NX-mjS"/>
-                            <constraint firstItem="hax-Zh-27l" firstAttribute="width" secondItem="GSq-k2-3zE" secondAttribute="width" id="fMS-zo-x1a"/>
-                            <constraint firstItem="k6o-Hl-icz" firstAttribute="bottom" secondItem="3WJ-pS-LDg" secondAttribute="bottom" constant="10" id="fsb-kn-dG9"/>
-                            <constraint firstItem="GSq-k2-3zE" firstAttribute="leading" secondItem="k6o-Hl-icz" secondAttribute="leading" constant="20" id="hth-Xp-Ila"/>
-                            <constraint firstItem="rhb-P9-AQp" firstAttribute="width" secondItem="GSq-k2-3zE" secondAttribute="width" id="jeg-tK-JGS"/>
-                            <constraint firstItem="k6o-Hl-icz" firstAttribute="bottom" secondItem="rhb-P9-AQp" secondAttribute="bottom" constant="10" id="l2T-k4-NzE"/>
-                            <constraint firstItem="3WJ-pS-LDg" firstAttribute="top" secondItem="GSq-k2-3zE" secondAttribute="bottom" constant="10" id="m50-sP-eNo"/>
-                            <constraint firstItem="3WJ-pS-LDg" firstAttribute="centerX" secondItem="GSq-k2-3zE" secondAttribute="centerX" id="vqf-iM-RLj"/>
-                            <constraint firstItem="3WJ-pS-LDg" firstAttribute="width" secondItem="GSq-k2-3zE" secondAttribute="width" id="xNb-D9-2xI"/>
+                            <constraint firstItem="3WJ-pS-LDg" firstAttribute="top" secondItem="GSq-k2-3zE" secondAttribute="bottom" constant="10" id="OJb-bZ-tbG"/>
+                            <constraint firstItem="k6o-Hl-icz" firstAttribute="trailing" secondItem="rhb-P9-AQp" secondAttribute="trailing" constant="10" id="Ybf-64-9Ek"/>
+                            <constraint firstItem="rhb-P9-AQp" firstAttribute="top" secondItem="hax-Zh-27l" secondAttribute="bottom" constant="10" id="ZO1-7P-8TR"/>
+                            <constraint firstItem="3WJ-pS-LDg" firstAttribute="top" secondItem="GSq-k2-3zE" secondAttribute="bottom" constant="10" id="bqO-Mu-Khj"/>
+                            <constraint firstItem="3WJ-pS-LDg" firstAttribute="centerX" secondItem="GSq-k2-3zE" secondAttribute="centerX" id="dvD-fv-tzA"/>
+                            <constraint firstItem="k6o-Hl-icz" firstAttribute="bottom" secondItem="rhb-P9-AQp" secondAttribute="bottom" constant="10" id="gvT-T3-Dqz"/>
+                            <constraint firstItem="3WJ-pS-LDg" firstAttribute="leading" secondItem="k6o-Hl-icz" secondAttribute="leading" constant="10" id="wTM-Se-osK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k6o-Hl-icz"/>
                     </view>
