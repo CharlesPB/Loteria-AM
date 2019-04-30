@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HDU-Il-prt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HDU-Il-prt">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -116,7 +116,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bhm-90-abX">
-                                <rect key="frame" x="44" y="134" width="325" height="348"/>
+                                <rect key="frame" x="44" y="134" width="325" height="457"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="QWP-je-hEA">
                                     <size key="itemSize" width="70" height="90"/>
@@ -158,54 +158,68 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hax-Zh-27l">
-                                <rect key="frame" x="212" y="632" width="192" height="174"/>
+                                <rect key="frame" x="212" y="641" width="192" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="192" id="L2m-zf-URA"/>
+                                </constraints>
                                 <state key="normal" title="Nueva Tabla" image="nuevatabla"/>
                                 <connections>
                                     <action selector="generaNuevaTabla:" destination="ppy-Ur-GwT" eventType="touchUpInside" id="gzA-kk-NWg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSq-k2-3zE">
-                                <rect key="frame" x="10" y="632" width="192" height="174"/>
+                                <rect key="frame" x="10" y="641" width="192" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="192" id="008-Fu-nqC"/>
+                                </constraints>
                                 <state key="normal" title="Limpiar tabla" image="limpiartabla"/>
                                 <connections>
                                     <action selector="limpiarTabla:" destination="ppy-Ur-GwT" eventType="touchUpInside" id="62b-36-T81"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Limpiar Tabla" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WJ-pS-LDg">
-                                <rect key="frame" x="20" y="831" width="102" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="10" y="825" width="126" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="126" id="YCh-Pa-4Af"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nueva Tabla" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhb-P9-AQp">
-                                <rect key="frame" x="222" y="816" width="172" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="166" y="825" width="238" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="238" id="mJm-Fj-v9W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="hax-Zh-27l" firstAttribute="centerX" secondItem="GSq-k2-3zE" secondAttribute="centerX" constant="202" id="1Op-R3-fkY"/>
+                            <constraint firstItem="3WJ-pS-LDg" firstAttribute="top" secondItem="GSq-k2-3zE" secondAttribute="bottom" constant="10" id="29X-KN-Cjx"/>
+                            <constraint firstItem="k6o-Hl-icz" firstAttribute="trailing" secondItem="rhb-P9-AQp" secondAttribute="trailing" constant="10" id="4e4-8t-Dsm"/>
+                            <constraint firstItem="rhb-P9-AQp" firstAttribute="centerX" secondItem="GSq-k2-3zE" secondAttribute="centerX" constant="179" id="8jF-OT-9f1"/>
+                            <constraint firstItem="GSq-k2-3zE" firstAttribute="top" secondItem="bhm-90-abX" secondAttribute="bottom" constant="50" id="8nP-sN-opB"/>
+                            <constraint firstItem="3WJ-pS-LDg" firstAttribute="leading" secondItem="k6o-Hl-icz" secondAttribute="leading" constant="10" id="9Bg-g6-tCm"/>
                             <constraint firstItem="GSq-k2-3zE" firstAttribute="height" secondItem="hax-Zh-27l" secondAttribute="height" id="9Eo-EN-OE3"/>
+                            <constraint firstItem="3WJ-pS-LDg" firstAttribute="centerX" secondItem="GSq-k2-3zE" secondAttribute="centerX" constant="-33" id="BqM-dt-jnB"/>
                             <constraint firstItem="bhm-90-abX" firstAttribute="leading" secondItem="k6o-Hl-icz" secondAttribute="leading" constant="44" id="GoW-Aw-XLt"/>
                             <constraint firstItem="k6o-Hl-icz" firstAttribute="bottom" secondItem="rhb-P9-AQp" secondAttribute="bottom" constant="10" id="JXW-Rl-kFf"/>
+                            <constraint firstItem="rhb-P9-AQp" firstAttribute="leading" secondItem="3WJ-pS-LDg" secondAttribute="trailing" constant="30" id="KcT-KV-fCM"/>
                             <constraint firstItem="k6o-Hl-icz" firstAttribute="trailing" secondItem="hax-Zh-27l" secondAttribute="trailing" constant="10" id="P85-pd-mD0"/>
                             <constraint firstItem="GSq-k2-3zE" firstAttribute="width" secondItem="hax-Zh-27l" secondAttribute="width" id="QuT-7Y-fx2"/>
                             <constraint firstItem="bhm-90-abX" firstAttribute="top" secondItem="k6o-Hl-icz" secondAttribute="top" constant="46" id="RvZ-C6-2ZL"/>
                             <constraint firstItem="GSq-k2-3zE" firstAttribute="leading" secondItem="2J0-7k-Vhk" secondAttribute="leading" constant="10" id="V60-T5-Tlt"/>
-                            <constraint firstItem="hax-Zh-27l" firstAttribute="top" secondItem="bhm-90-abX" secondAttribute="bottom" constant="150" id="Wnb-KG-ub5"/>
-                            <constraint firstItem="GSq-k2-3zE" firstAttribute="top" secondItem="bhm-90-abX" secondAttribute="bottom" constant="150" id="Xvr-O9-tmI"/>
-                            <constraint firstItem="hax-Zh-27l" firstAttribute="top" secondItem="bhm-90-abX" secondAttribute="bottom" constant="150" id="d7m-iV-Lb8"/>
-                            <constraint firstItem="3WJ-pS-LDg" firstAttribute="top" secondItem="hax-Zh-27l" secondAttribute="bottom" constant="25" id="i5Y-gw-rJs"/>
                             <constraint firstItem="bhm-90-abX" firstAttribute="top" secondItem="k6o-Hl-icz" secondAttribute="top" constant="46" id="iGu-TF-B4T"/>
                             <constraint firstItem="k6o-Hl-icz" firstAttribute="trailing" secondItem="bhm-90-abX" secondAttribute="trailing" constant="45" id="kHb-3Y-tAh"/>
-                            <constraint firstItem="rhb-P9-AQp" firstAttribute="leading" secondItem="3WJ-pS-LDg" secondAttribute="trailing" constant="100" id="krR-dE-uCD"/>
-                            <constraint firstItem="hax-Zh-27l" firstAttribute="top" secondItem="bhm-90-abX" secondAttribute="bottom" constant="150" id="oZD-pH-nwP"/>
+                            <constraint firstItem="hax-Zh-27l" firstAttribute="top" secondItem="bhm-90-abX" secondAttribute="bottom" constant="50" id="keM-WQ-qcr"/>
+                            <constraint firstItem="rhb-P9-AQp" firstAttribute="leading" secondItem="3WJ-pS-LDg" secondAttribute="trailing" constant="30" id="ooi-VI-Lbe"/>
                             <constraint firstItem="rhb-P9-AQp" firstAttribute="top" secondItem="hax-Zh-27l" secondAttribute="bottom" constant="10" id="p64-BN-CUe"/>
-                            <constraint firstItem="rhb-P9-AQp" firstAttribute="leading" secondItem="3WJ-pS-LDg" secondAttribute="trailing" constant="100" id="sLT-rU-zgM"/>
-                            <constraint firstItem="3WJ-pS-LDg" firstAttribute="leading" secondItem="k6o-Hl-icz" secondAttribute="leading" constant="20" id="sjN-UY-peK"/>
-                            <constraint firstItem="k6o-Hl-icz" firstAttribute="trailing" secondItem="rhb-P9-AQp" secondAttribute="trailing" constant="20" id="tpC-4K-4tv"/>
                             <constraint firstItem="hax-Zh-27l" firstAttribute="leading" secondItem="GSq-k2-3zE" secondAttribute="trailing" constant="10" id="uwd-ON-8LP"/>
+                            <constraint firstItem="3WJ-pS-LDg" firstAttribute="top" secondItem="GSq-k2-3zE" secondAttribute="bottom" constant="10" id="xM6-a8-f6m"/>
                             <constraint firstItem="k6o-Hl-icz" firstAttribute="bottom" secondItem="3WJ-pS-LDg" secondAttribute="bottom" constant="10" id="ydx-oF-nZ7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k6o-Hl-icz"/>
