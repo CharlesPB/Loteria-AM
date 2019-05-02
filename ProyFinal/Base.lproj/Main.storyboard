@@ -242,112 +242,27 @@
             </objects>
             <point key="canvasLocation" x="3279.7101449275365" y="465.40178571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Como Jugar-->
         <scene sceneID="F6e-YI-U0j">
             <objects>
-                <viewController id="GsX-pw-doC" sceneMemberID="viewController">
+                <viewController id="GsX-pw-doC" customClass="ViewControllerComoJugar" customModule="ProyFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GLR-qT-HzT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ver y dar las cartas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66E-lg-eg5">
-                                <rect key="frame" x="11" y="99" width="196" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ely-5d-93k">
-                                <rect key="frame" x="40" y="192" width="187" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="En la pantalla principal, seleccionar el botón de Modo Carta">
-                                        <attributes>
-                                            <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="FH1-go-xwQ">
-                                <rect key="frame" x="241" y="110" width="117" height="216"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comojugar-modocarta" translatesAutoresizingMaskIntoConstraints="NO" id="W13-xu-RfN">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUW-41-Zm5">
-                                <rect key="frame" x="116" y="339" width="223" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Para escuchar el nombre de la carta, seleccionar el botón de sonido">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speaker" translatesAutoresizingMaskIntoConstraints="NO" id="yhN-QN-Fg6">
-                                <rect key="frame" x="50" y="345" width="44" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXh-WF-WjD">
-                                <rect key="frame" x="20" y="418" width="250" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Para ver la siguiente carta, oprimir el botón Siguiente Carta">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="6S1-S5-eh1">
-                                <rect key="frame" x="278" y="404" width="93" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3C-Ht-RH5">
-                                <rect key="frame" x="116" y="510" width="272" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Para ver la lista de cartas que han pasado, seleccionar el botón Lista Cartas Dadas">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img3" translatesAutoresizingMaskIntoConstraints="NO" id="wN8-VA-NbG">
-                                <rect key="frame" x="11" y="497" width="97" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmm-Mo-5hg">
-                                <rect key="frame" x="196" y="652" width="149" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Deslizar para la derecha para ver las cartas pasadas ">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img4" translatesAutoresizingMaskIntoConstraints="NO" id="kLY-e8-BE7">
-                                <rect key="frame" x="40" y="607" width="128" height="238"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yuc-IM-32b">
-                                <rect key="frame" x="308" y="815" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="siguiente"/>
-                                <connections>
-                                    <segue destination="yT1-ey-KFg" kind="show" id="YZ8-fc-aKa"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W13-xu-RfN" firstAttribute="top" secondItem="wwI-4V-ND7" secondAttribute="top" id="7Fe-at-xj3"/>
+                            <constraint firstItem="W13-xu-RfN" firstAttribute="bottom" secondItem="wwI-4V-ND7" secondAttribute="bottom" id="bSF-pG-I8H"/>
+                            <constraint firstItem="W13-xu-RfN" firstAttribute="trailing" secondItem="wwI-4V-ND7" secondAttribute="trailing" id="baV-i7-hIW"/>
+                            <constraint firstItem="W13-xu-RfN" firstAttribute="leading" secondItem="wwI-4V-ND7" secondAttribute="leading" id="lQj-3x-adP"/>
+                            <constraint firstItem="W13-xu-RfN" firstAttribute="trailing" secondItem="wwI-4V-ND7" secondAttribute="trailing" id="nfV-yQ-Zqj"/>
+                            <constraint firstItem="W13-xu-RfN" firstAttribute="bottom" secondItem="wwI-4V-ND7" secondAttribute="bottom" id="tbW-Py-3lI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wwI-4V-ND7"/>
                     </view>
                 </viewController>
@@ -363,74 +278,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jugar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5E-f0-3QT">
-                                <rect key="frame" x="21" y="96" width="196" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Para cambiar de tabla, seleccionar el botón Nueva Tabla" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKq-0r-hBc">
-                                <rect key="frame" x="21" y="582" width="266" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Para quitar todas las fichas de una tabla, seleccionar el botón Limpiar Tabla" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttc-cv-gS2">
-                                <rect key="frame" x="141" y="689" width="253" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrN-5d-zOM">
-                                <rect key="frame" x="149" y="389" width="253" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Seleccionar el modo de ganar el juego (se puede seleccionar más de uno), la opción de Vertical se selecciona por defecto. Oprimir el botón Listo</string>
-                                        <attributes>
-                                            <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img6" translatesAutoresizingMaskIntoConstraints="NO" id="gNJ-Dl-cMj">
-                                <rect key="frame" x="14" y="317" width="127" height="233"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img7" translatesAutoresizingMaskIntoConstraints="NO" id="Jcu-Pv-gkX">
-                                <rect key="frame" x="302" y="567" width="77" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img8" translatesAutoresizingMaskIntoConstraints="NO" id="pnK-fo-my3">
-                                <rect key="frame" x="26" y="681" width="81" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmE-EZ-pEj">
-                                <rect key="frame" x="340" y="832" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="siguiente"/>
-                                <connections>
-                                    <segue destination="zSq-Oh-eWu" kind="show" id="WE5-Ch-K9i"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="En la pantalla principal, seleccionar el botón de Modo Jugador" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkc-iy-fcW">
-                                <rect key="frame" x="43" y="161" width="216" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img5" translatesAutoresizingMaskIntoConstraints="NO" id="JVb-pu-6bu">
-                                <rect key="frame" x="245" y="123" width="127" height="238"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comojugar-modojugador1" translatesAutoresizingMaskIntoConstraints="NO" id="B9w-ro-s42">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="B9w-ro-s42" firstAttribute="bottom" secondItem="FfU-RT-3pG" secondAttribute="bottom" id="1Ak-mm-ix6"/>
+                            <constraint firstItem="B9w-ro-s42" firstAttribute="trailing" secondItem="FfU-RT-3pG" secondAttribute="trailing" id="N2N-gG-wyu"/>
+                            <constraint firstItem="B9w-ro-s42" firstAttribute="leading" secondItem="FfU-RT-3pG" secondAttribute="leading" id="bMi-R1-dXP"/>
+                            <constraint firstItem="B9w-ro-s42" firstAttribute="top" secondItem="FfU-RT-3pG" secondAttribute="top" id="dY7-fc-tgr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FfU-RT-3pG"/>
                     </view>
                 </viewController>
@@ -446,46 +304,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img9" translatesAutoresizingMaskIntoConstraints="NO" id="Kai-Wh-Xka">
-                                <rect key="frame" x="63" y="184" width="289" height="234"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Al oprimir una carta dentro de la tabla, aparece una ficha, si se vuelve a oprimir, la ficha se remueve" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvq-lc-L2t">
-                                <rect key="frame" x="62" y="97" width="319" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dejar oprimida una carta para verla en grande" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4V-jn-Po5">
-                                <rect key="frame" x="47" y="492" width="159" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCn-uW-DDJ">
-                                <rect key="frame" x="208" y="737" width="186" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Al ganar, se despliega un mensaje de felicitación!">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img10" translatesAutoresizingMaskIntoConstraints="NO" id="la0-us-3ki">
-                                <rect key="frame" x="223" y="443" width="129" height="234"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img11" translatesAutoresizingMaskIntoConstraints="NO" id="5bD-Kr-wkD">
-                                <rect key="frame" x="47" y="621" width="128" height="234"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comojugar-modojugador2" translatesAutoresizingMaskIntoConstraints="NO" id="mVr-kQ-rI7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mVr-kQ-rI7" firstAttribute="top" secondItem="2ha-c1-6RH" secondAttribute="top" id="1oE-Xf-ndz"/>
+                            <constraint firstItem="mVr-kQ-rI7" firstAttribute="trailing" secondItem="2ha-c1-6RH" secondAttribute="trailing" id="OSo-tl-O1H"/>
+                            <constraint firstItem="mVr-kQ-rI7" firstAttribute="leading" secondItem="2ha-c1-6RH" secondAttribute="leading" id="kiN-XR-KEW"/>
+                            <constraint firstAttribute="bottom" secondItem="mVr-kQ-rI7" secondAttribute="bottom" id="qnC-62-cu0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2ha-c1-6RH"/>
                     </view>
                 </viewController>
@@ -794,22 +623,14 @@
         <image name="cc1" width="575" height="172"/>
         <image name="cg1" width="575" height="172"/>
         <image name="comojugar" width="304" height="265"/>
+        <image name="comojugar-modocarta" width="367" height="690"/>
+        <image name="comojugar-modojugador1" width="367" height="690"/>
+        <image name="comojugar-modojugador2" width="366" height="690"/>
         <image name="creditos" width="341" height="312"/>
         <image name="creditostexto" width="927" height="711"/>
         <image name="d1" width="575" height="164"/>
         <image name="ficha" width="464" height="463"/>
         <image name="h1" width="575" height="164"/>
-        <image name="img1" width="253" height="524"/>
-        <image name="img10" width="374" height="793"/>
-        <image name="img11" width="263" height="541"/>
-        <image name="img2" width="182" height="185"/>
-        <image name="img3" width="204" height="196"/>
-        <image name="img4" width="251" height="514"/>
-        <image name="img5" width="252" height="524"/>
-        <image name="img6" width="252" height="541"/>
-        <image name="img7" width="105" height="115"/>
-        <image name="img8" width="120" height="128"/>
-        <image name="img9" width="574" height="524"/>
         <image name="limpiartabla" width="180" height="174"/>
         <image name="listacartas" width="180" height="174"/>
         <image name="loteria" width="327" height="191"/>
