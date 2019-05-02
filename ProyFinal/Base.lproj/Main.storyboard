@@ -507,9 +507,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kb6-NX-nVp">
-                                <rect key="frame" x="182" y="676" width="50" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kb6-NX-nVp">
+                                <rect key="frame" x="182" y="676" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1oW-mE-PqG"/>
+                                    <constraint firstAttribute="height" constant="50" id="nHN-Rx-Peu"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="speaker"/>
                                 <connections>
                                     <action selector="btnSonido:" destination="QhY-JH-zMl" eventType="touchUpInside" id="rvY-Kg-75J"/>
@@ -518,6 +521,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="kb6-NX-nVp" firstAttribute="centerX" secondItem="1wc-Nw-Uo7" secondAttribute="centerX" id="09R-xw-ije"/>
                             <constraint firstItem="ZfA-6M-VPK" firstAttribute="top" secondItem="eoz-xf-4n3" secondAttribute="bottom" constant="10" id="2XM-jY-ndx"/>
                             <constraint firstItem="ZfA-6M-VPK" firstAttribute="leading" secondItem="yFo-BW-vze" secondAttribute="leading" constant="10" id="9IT-cG-It5"/>
                             <constraint firstItem="l35-WN-s6N" firstAttribute="top" secondItem="1wc-Nw-Uo7" secondAttribute="bottom" constant="50" id="DlY-yx-A4v"/>
@@ -534,6 +538,7 @@
                             <constraint firstItem="1wc-Nw-Uo7" firstAttribute="centerX" secondItem="yFo-BW-vze" secondAttribute="centerX" id="vmy-cg-cO3"/>
                             <constraint firstItem="yFo-BW-vze" firstAttribute="trailing" secondItem="1wc-Nw-Uo7" secondAttribute="trailing" constant="25" id="vvg-dF-ZWH"/>
                             <constraint firstItem="wef-Jj-mRH" firstAttribute="top" secondItem="l35-WN-s6N" secondAttribute="bottom" constant="10" id="xsh-lu-l9n"/>
+                            <constraint firstItem="kb6-NX-nVp" firstAttribute="top" secondItem="1wc-Nw-Uo7" secondAttribute="bottom" constant="8" id="yJD-pT-miC"/>
                             <constraint firstItem="l35-WN-s6N" firstAttribute="height" secondItem="eoz-xf-4n3" secondAttribute="height" id="zll-MZ-0TU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yFo-BW-vze"/>
