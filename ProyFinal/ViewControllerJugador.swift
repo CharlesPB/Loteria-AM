@@ -15,6 +15,8 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var btNuevaTabla: UIButton!
+    @IBOutlet weak var btnZoom: UIButton!
+    
     
     var nombreImgZoom : String!
     
@@ -59,7 +61,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         let longPress = UILongPressGestureRecognizer(target:self, action: "manejaGestoLongPress:")
         self.collectionView.addGestureRecognizer(longPress)
        
-        
+        btnZoom.isHidden = true
     }
     
     

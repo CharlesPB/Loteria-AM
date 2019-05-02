@@ -197,7 +197,7 @@
                                     <action selector="generaNuevaTabla:" destination="ppy-Ur-GwT" eventType="touchUpInside" id="gzA-kk-NWg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35X-kH-kRC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35X-kH-kRC">
                                 <rect key="frame" x="210" y="673" width="30" height="30"/>
                                 <state key="normal" title="e"/>
                                 <connections>
@@ -216,6 +216,7 @@
                             <constraint firstItem="k6o-Hl-icz" firstAttribute="bottom" secondItem="3WJ-pS-LDg" secondAttribute="bottom" constant="10" id="BWs-9u-w0i"/>
                             <constraint firstItem="35X-kH-kRC" firstAttribute="leading" secondItem="k6o-Hl-icz" secondAttribute="leading" constant="210" id="Ca0-E8-UfP"/>
                             <constraint firstItem="k6o-Hl-icz" firstAttribute="trailing" secondItem="bhm-90-abX" secondAttribute="trailing" constant="20" id="D6X-hG-HjH"/>
+                            <constraint firstItem="35X-kH-kRC" firstAttribute="top" secondItem="bhm-90-abX" secondAttribute="bottom" constant="8" id="Ddb-Pg-ZT3"/>
                             <constraint firstItem="bhm-90-abX" firstAttribute="top" secondItem="k6o-Hl-icz" secondAttribute="top" constant="20" id="GRN-OH-Wgo"/>
                             <constraint firstItem="bhm-90-abX" firstAttribute="leading" secondItem="k6o-Hl-icz" secondAttribute="leading" constant="20" id="JhO-I5-Osp"/>
                             <constraint firstItem="3WJ-pS-LDg" firstAttribute="top" secondItem="GSq-k2-3zE" secondAttribute="bottom" constant="10" id="OJb-bZ-tbG"/>
@@ -230,6 +231,7 @@
                     </view>
                     <connections>
                         <outlet property="btNuevaTabla" destination="hax-Zh-27l" id="Ges-fq-LPJ"/>
+                        <outlet property="btnZoom" destination="35X-kH-kRC" id="umf-ED-eOb"/>
                         <outlet property="collectionView" destination="bhm-90-abX" id="aio-8X-bUG"/>
                     </connections>
                 </viewController>
