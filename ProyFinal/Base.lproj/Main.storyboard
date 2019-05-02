@@ -250,16 +250,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comojugar-modocarta" translatesAutoresizingMaskIntoConstraints="NO" id="W13-xu-RfN">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="5" y="88" width="414" height="774"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="W13-xu-RfN" firstAttribute="leading" secondItem="wwI-4V-ND7" secondAttribute="leading" constant="5" id="4jP-ys-iX2"/>
                             <constraint firstItem="W13-xu-RfN" firstAttribute="top" secondItem="wwI-4V-ND7" secondAttribute="top" id="7Fe-at-xj3"/>
+                            <constraint firstItem="W13-xu-RfN" firstAttribute="trailing" secondItem="wwI-4V-ND7" secondAttribute="trailing" constant="5" id="KGz-Wy-M3x"/>
                             <constraint firstItem="W13-xu-RfN" firstAttribute="bottom" secondItem="wwI-4V-ND7" secondAttribute="bottom" id="bSF-pG-I8H"/>
-                            <constraint firstItem="W13-xu-RfN" firstAttribute="trailing" secondItem="wwI-4V-ND7" secondAttribute="trailing" id="baV-i7-hIW"/>
-                            <constraint firstItem="W13-xu-RfN" firstAttribute="leading" secondItem="wwI-4V-ND7" secondAttribute="leading" id="lQj-3x-adP"/>
-                            <constraint firstItem="W13-xu-RfN" firstAttribute="trailing" secondItem="wwI-4V-ND7" secondAttribute="trailing" id="nfV-yQ-Zqj"/>
                             <constraint firstItem="W13-xu-RfN" firstAttribute="bottom" secondItem="wwI-4V-ND7" secondAttribute="bottom" id="tbW-Py-3lI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wwI-4V-ND7"/>
@@ -285,14 +284,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comojugar-modojugador1" translatesAutoresizingMaskIntoConstraints="NO" id="B9w-ro-s42">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="5" y="88" width="414" height="774"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="B9w-ro-s42" firstAttribute="bottom" secondItem="FfU-RT-3pG" secondAttribute="bottom" id="1Ak-mm-ix6"/>
-                            <constraint firstItem="B9w-ro-s42" firstAttribute="trailing" secondItem="FfU-RT-3pG" secondAttribute="trailing" id="N2N-gG-wyu"/>
-                            <constraint firstItem="B9w-ro-s42" firstAttribute="leading" secondItem="FfU-RT-3pG" secondAttribute="leading" id="bMi-R1-dXP"/>
+                            <constraint firstItem="B9w-ro-s42" firstAttribute="trailing" secondItem="FfU-RT-3pG" secondAttribute="trailing" constant="5" id="68H-3F-5MO"/>
+                            <constraint firstItem="B9w-ro-s42" firstAttribute="leading" secondItem="FfU-RT-3pG" secondAttribute="leading" constant="5" id="cfx-6Q-RyR"/>
                             <constraint firstItem="B9w-ro-s42" firstAttribute="top" secondItem="FfU-RT-3pG" secondAttribute="top" id="dY7-fc-tgr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FfU-RT-3pG"/>
@@ -318,15 +317,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comojugar-modojugador2" translatesAutoresizingMaskIntoConstraints="NO" id="mVr-kQ-rI7">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="5" y="88" width="414" height="808"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="mVr-kQ-rI7" firstAttribute="top" secondItem="2ha-c1-6RH" secondAttribute="top" id="1oE-Xf-ndz"/>
-                            <constraint firstItem="mVr-kQ-rI7" firstAttribute="trailing" secondItem="2ha-c1-6RH" secondAttribute="trailing" id="OSo-tl-O1H"/>
-                            <constraint firstItem="mVr-kQ-rI7" firstAttribute="leading" secondItem="2ha-c1-6RH" secondAttribute="leading" id="kiN-XR-KEW"/>
+                            <constraint firstItem="mVr-kQ-rI7" firstAttribute="trailing" secondItem="2ha-c1-6RH" secondAttribute="trailing" constant="5" id="lux-Wp-UGQ"/>
                             <constraint firstAttribute="bottom" secondItem="mVr-kQ-rI7" secondAttribute="bottom" id="qnC-62-cu0"/>
+                            <constraint firstItem="mVr-kQ-rI7" firstAttribute="leading" secondItem="2ha-c1-6RH" secondAttribute="leading" constant="5" id="tF7-8T-XlD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2ha-c1-6RH"/>
                     </view>
