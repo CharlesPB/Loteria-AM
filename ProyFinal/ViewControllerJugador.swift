@@ -8,12 +8,17 @@
 
 import UIKit
 import AudioToolbox
+import AVFoundation
 
-class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UIPopoverPresentationControllerDelegate, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var btNuevaTabla: UIButton!
+    
+    var nombreImgZoom : String!
+    
+    var audioPlayer: AVAudioPlayer?
     
     var listaCartas = [String](arrayLiteral: "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49")
     
@@ -51,7 +56,8 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         }
         
         print(listaComoGanar)
-        
+        let longPress = UILongPressGestureRecognizer(target:self, action: "manejaGestoLongPress:")
+        self.collectionView.addGestureRecognizer(longPress)
        
         
     }
@@ -134,7 +140,7 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         // vibra en iphone 6s
         //AudioServicesPlaySystemSound(1519)
         
-        
+        nombreImgZoom = listaTabla[indexPath.item]
         
         if posOcupadas[indexPath.item] == false {
             posOcupadas[indexPath.item] = true
@@ -158,6 +164,17 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
             
             // iphone 6s
             //AudioServicesPlaySystemSound(1519)
+            
+            do{
+                if let fileURL = Bundle.main.path(forResource: "winning", ofType: "mp3", inDirectory: "soundsLoteria") {
+                    audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+                } else {
+                    print("No file with specified name exists")
+                }
+                audioPlayer?.play()
+            } catch {
+                print("coudn't load the file")
+            }
             
             let alerta = UIAlertController(title: "Felicidades", message: "Haz ganado", preferredStyle: .alert)
             let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
@@ -296,15 +313,53 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
         collectionView.reloadData()
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    @IBAction func manejaGestoLongPress(_ sender: UILongPressGestureRecognizer) {
+        
+        let posicion = sender.location(in: self.collectionView)
+        
+        if let indexPath = self.collectionView.indexPathForItem(at: posicion){
+            let cell = self.collectionView.cellForItem(at: indexPath)
+            nombreImgZoom = listaTabla[indexPath.item]
+            performSegue(withIdentifier: "seguePopOver", sender: indexPath)
+        }
+        
+        
+        
+    }
+    
+    
+    
+    // método de delegado de popover presentation controller
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        
+        return .none
+        
+    }
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vistaZoom = segue.destination as! ViewControllerPopOver
+        vistaZoom.popoverPresentationController!.delegate = self
+        //vistaZoom.popoverPresentationController?.sourceRect
+        //vistaZoom.popoverPresentationController?.sourceRect = CGRect(self.view.bounds.midX, self.view.bounds.midY,0.0,0.0)
+        // width 350, height 400 del popover
+        /*
+         let inicioX = (self.view.bounds.maxX - 350)
+         let inicioY = (self.view.bounds.maxY - 400)
+         vistaZoom.popoverPresentationController?.sourceRect = CGRect(x: inicioX, y: inicioY, width: 0.0, height: 0.0)
+         
+         let viewForSource = sender as! UIView
+         vistaZoom.popoverPresentationController?.sourceView = viewForSource
+         vistaZoom.popoverPresentationController?.sourceRect = viewForSource.bounds
+         */
+        
+       
+        //vistaZoom.popoverPresentationController?.preferredContentSize = CGSize(350, 400)
+        
+        vistaZoom.nombreImg = nombreImgZoom
+        
+    }
     
 }
 
