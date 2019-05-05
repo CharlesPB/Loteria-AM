@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewControllerModoGanar: UIViewController {
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
+    }
+    override var shouldAutorotate: Bool { return false
+    }
    
     var listaModoGanarSeleccionado = [Bool](arrayLiteral: true, false, false, false, false, false)
     
@@ -20,6 +25,9 @@ class ViewControllerModoGanar: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Seleccionar cómo ganar"
+        
+        
+       
         
         // Do any additional setup after loading the view.
     }

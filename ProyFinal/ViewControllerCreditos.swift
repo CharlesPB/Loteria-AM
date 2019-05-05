@@ -1,25 +1,24 @@
 //
-//  ViewControllerComoJugar.swift
+//  ViewControllerCreditos.swift
 //  ProyFinal
 //
-//  Created by Alumno on 5/2/19.
+//  Created by Daniela Garcia on 5/5/19.
 //  Copyright © 2019 Carlos Pérez 2. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerComoJugar: UIViewController {
+class ViewControllerCreditos: UIViewController {
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
+    }
+    override var shouldAutorotate: Bool { return false
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.title = "Cómo Jugar"
-        
-    }
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
-    }
-    override var shouldAutorotate: Bool { return false
     }
     
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		652CDAB7227F8E2000F1E822 /* ViewControllerCreditos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652CDAB6227F8E2000F1E822 /* ViewControllerCreditos.swift */; };
 		65EFC6F6225933DF0007C6E4 /* ViewControllerCartasDadas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EFC6F5225933DF0007C6E4 /* ViewControllerCartasDadas.swift */; };
 		65F121402266ED5900D31027 /* CollectionViewCellTabla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F1213F2266ED5900D31027 /* CollectionViewCellTabla.swift */; };
 		EA3AAB21223AC8FB00FA26CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3AAB20223AC8FB00FA26CE /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		652CDAB6227F8E2000F1E822 /* ViewControllerCreditos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCreditos.swift; sourceTree = "<group>"; };
 		65EFC6F5225933DF0007C6E4 /* ViewControllerCartasDadas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCartasDadas.swift; sourceTree = "<group>"; };
 		65F1213F2266ED5900D31027 /* CollectionViewCellTabla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellTabla.swift; sourceTree = "<group>"; };
 		EA3AAB1D223AC8FB00FA26CE /* ProyFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +76,7 @@
 				65F1213F2266ED5900D31027 /* CollectionViewCellTabla.swift */,
 				EA3AAB22223AC8FB00FA26CE /* ViewController.swift */,
 				EA3AAB24223AC8FB00FA26CE /* Main.storyboard */,
+				652CDAB6227F8E2000F1E822 /* ViewControllerCreditos.swift */,
 				FBA6908A227B611500F29557 /* ViewControllerComoJugar.swift */,
 				65EFC6F5225933DF0007C6E4 /* ViewControllerCartasDadas.swift */,
 				FBDC65AB224C1E83006BF6EF /* ViewControllerModoGanar.swift */,
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBA6908B227B611500F29557 /* ViewControllerComoJugar.swift in Sources */,
+				652CDAB7227F8E2000F1E822 /* ViewControllerCreditos.swift in Sources */,
 				EAC9F51D227A247F00F34F60 /* ViewControllerPopOver.swift in Sources */,
 				EA3AAB23223AC8FB00FA26CE /* ViewController.swift in Sources */,
 				65EFC6F6225933DF0007C6E4 /* ViewControllerCartasDadas.swift in Sources */,

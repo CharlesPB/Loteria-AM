@@ -27,7 +27,10 @@ class ViewControllerDarCarta: UIViewController {
     var index : Int = 0
     
     
-    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
+    }
+    override var shouldAutorotate: Bool { return false
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +38,7 @@ class ViewControllerDarCarta: UIViewController {
         // Do any additional setup after loading the view.
         
         self.title = "Dar la carta"
+        
         
         listaCartas.shuffle()
         imgCarta.image = UIImage(named: listaCartas[index])

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HDU-Il-prt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HDU-Il-prt">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -307,16 +307,16 @@
             </objects>
             <point key="canvasLocation" x="440.57971014492756" y="769.41964285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Creditos-->
         <scene sceneID="rFy-N7-LO6">
             <objects>
-                <viewController id="nbJ-zs-dfg" sceneMemberID="viewController">
+                <viewController id="nbJ-zs-dfg" customClass="ViewControllerCreditos" customModule="ProyFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kQG-gN-XCE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="creditostexto" translatesAutoresizingMaskIntoConstraints="NO" id="7Ua-tg-bTN">
-                                <rect key="frame" x="25" y="238" width="364" height="367"/>
+                                <rect key="frame" x="25" y="238" width="364.00000000000023" height="367"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7Ua-tg-bTN" secondAttribute="height" multiplier="364:367" id="5tp-3m-E5C"/>
                                 </constraints>

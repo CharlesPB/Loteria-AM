@@ -42,6 +42,11 @@ class ViewControllerJugador: UIViewController, UICollectionViewDelegate, UIColle
     let selection = UISelectionFeedbackGenerator()
     let notification = UINotificationFeedbackGenerator()
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
+    }
+    override var shouldAutorotate: Bool { return false
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
