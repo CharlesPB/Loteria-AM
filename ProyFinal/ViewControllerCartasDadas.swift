@@ -25,6 +25,10 @@ class ViewControllerCartasDadas: UIViewController, UIPickerViewDataSource, UIPic
     var width : CGFloat!
     var height : CGFloat!
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
+    }
+    override var shouldAutorotate: Bool { return false
+    }
     
     override func viewDidLoad() {
         

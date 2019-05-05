@@ -14,6 +14,11 @@ class ViewControllerPopOver: UIViewController {
     
     var nombreImg : String!
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
+    }
+    override var shouldAutorotate: Bool { return false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
