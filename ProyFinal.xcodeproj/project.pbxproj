@@ -17,8 +17,8 @@
 		EA3AAB2B223AC8FF00FA26CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3AAB29223AC8FF00FA26CE /* LaunchScreen.storyboard */; };
 		EA94C459223AE40000DE83A1 /* ViewControllerDarCarta.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94C458223AE40000DE83A1 /* ViewControllerDarCarta.swift */; };
 		EA94C45B223AE50100DE83A1 /* ViewControllerJugador.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94C45A223AE50100DE83A1 /* ViewControllerJugador.swift */; };
+		EA9EC99422806449004ADCE7 /* soundsLoteria in Resources */ = {isa = PBXBuildFile; fileRef = EA9EC99322806449004ADCE7 /* soundsLoteria */; };
 		EAC9F51D227A247F00F34F60 /* ViewControllerPopOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC9F51C227A247F00F34F60 /* ViewControllerPopOver.swift */; };
-		EAC9F52B227B2B2000F34F60 /* soundsLoteria in Resources */ = {isa = PBXBuildFile; fileRef = EAC9F52A227B2B2000F34F60 /* soundsLoteria */; };
 		FBA6908B227B611500F29557 /* ViewControllerComoJugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6908A227B611500F29557 /* ViewControllerComoJugar.swift */; };
 		FBDC65AC224C1E83006BF6EF /* ViewControllerModoGanar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC65AB224C1E83006BF6EF /* ViewControllerModoGanar.swift */; };
 /* End PBXBuildFile section */
@@ -36,8 +36,8 @@
 		EA3AAB2C223AC8FF00FA26CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA94C458223AE40000DE83A1 /* ViewControllerDarCarta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDarCarta.swift; sourceTree = "<group>"; };
 		EA94C45A223AE50100DE83A1 /* ViewControllerJugador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerJugador.swift; sourceTree = "<group>"; };
+		EA9EC99322806449004ADCE7 /* soundsLoteria */ = {isa = PBXFileReference; lastKnownFileType = folder; path = soundsLoteria; sourceTree = "<group>"; };
 		EAC9F51C227A247F00F34F60 /* ViewControllerPopOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPopOver.swift; sourceTree = "<group>"; };
-		EAC9F52A227B2B2000F34F60 /* soundsLoteria */ = {isa = PBXFileReference; lastKnownFileType = folder; path = soundsLoteria; sourceTree = "<group>"; };
 		FBA6908A227B611500F29557 /* ViewControllerComoJugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerComoJugar.swift; sourceTree = "<group>"; };
 		FBDC65AB224C1E83006BF6EF /* ViewControllerModoGanar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerModoGanar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,7 +84,7 @@
 				EAC9F51C227A247F00F34F60 /* ViewControllerPopOver.swift */,
 				EA94C45A223AE50100DE83A1 /* ViewControllerJugador.swift */,
 				EA3AAB27223AC8FF00FA26CE /* Assets.xcassets */,
-				EAC9F52A227B2B2000F34F60 /* soundsLoteria */,
+				EA9EC99322806449004ADCE7 /* soundsLoteria */,
 				EA3AAB29223AC8FF00FA26CE /* LaunchScreen.storyboard */,
 				EA3AAB2C223AC8FF00FA26CE /* Info.plist */,
 			);
@@ -150,7 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA3AAB2B223AC8FF00FA26CE /* LaunchScreen.storyboard in Resources */,
-				EAC9F52B227B2B2000F34F60 /* soundsLoteria in Resources */,
+				EA9EC99422806449004ADCE7 /* soundsLoteria in Resources */,
 				EA3AAB28223AC8FF00FA26CE /* Assets.xcassets in Resources */,
 				EA3AAB26223AC8FB00FA26CE /* Main.storyboard in Resources */,
 			);
