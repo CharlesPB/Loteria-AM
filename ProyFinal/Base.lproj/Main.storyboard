@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HDU-Il-prt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HDU-Il-prt">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -80,7 +80,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9TZ-Ag-sxz"/>
+                    <navigationItem key="navigationItem" id="9TZ-Ag-sxz">
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="HIQ-i8-4u2"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -237,7 +239,8 @@
                         <viewLayoutGuide key="safeArea" id="wwI-4V-ND7"/>
                     </view>
                     <navigationItem key="navigationItem" id="Xbg-lx-DFI">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="5ce-vp-bzR">
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="wJh-WI-6X8"/>
+                        <barButtonItem key="rightBarButtonItem" title="Siguiente" id="5ce-vp-bzR">
                             <connections>
                                 <segue destination="yT1-ey-KFg" kind="show" id="UMA-PB-Fm9"/>
                             </connections>
@@ -270,7 +273,8 @@
                         <viewLayoutGuide key="safeArea" id="FfU-RT-3pG"/>
                     </view>
                     <navigationItem key="navigationItem" id="qD2-ST-bUD">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="Gx8-cM-xyi">
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="Unn-WN-Hqx"/>
+                        <barButtonItem key="rightBarButtonItem" title="Siguiente" id="Gx8-cM-xyi">
                             <connections>
                                 <segue destination="zSq-Oh-eWu" kind="show" id="mC8-TH-34n"/>
                             </connections>
@@ -316,7 +320,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="creditostexto" translatesAutoresizingMaskIntoConstraints="NO" id="7Ua-tg-bTN">
-                                <rect key="frame" x="25" y="238" width="364.00000000000023" height="367"/>
+                                <rect key="frame" x="25" y="238" width="364" height="367"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7Ua-tg-bTN" secondAttribute="height" multiplier="364:367" id="5tp-3m-E5C"/>
                                 </constraints>
@@ -434,6 +438,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mYv-x9-GiW"/>
                     </view>
+                    <navigationItem key="navigationItem" id="LL3-1i-Co2">
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="h0b-9I-xpt"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zN-uT-smV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -520,6 +527,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yFo-BW-vze"/>
                     </view>
+                    <navigationItem key="navigationItem" id="muk-nT-dCN">
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="3f9-i0-EYh"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="imgCarta" destination="1wc-Nw-Uo7" id="XE7-sC-3gp"/>
                     </connections>
