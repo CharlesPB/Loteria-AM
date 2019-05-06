@@ -81,7 +81,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="9TZ-Ag-sxz">
-                        <barButtonItem key="backBarButtonItem" title="Atrás" id="HIQ-i8-4u2"/>
+                        <barButtonItem key="backBarButtonItem" title="Regresar" id="HIQ-i8-4u2"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -239,7 +239,7 @@
                         <viewLayoutGuide key="safeArea" id="wwI-4V-ND7"/>
                     </view>
                     <navigationItem key="navigationItem" id="Xbg-lx-DFI">
-                        <barButtonItem key="backBarButtonItem" title="Atrás" id="wJh-WI-6X8"/>
+                        <barButtonItem key="backBarButtonItem" title="Regresar" id="wJh-WI-6X8"/>
                         <barButtonItem key="rightBarButtonItem" title="Siguiente" id="5ce-vp-bzR">
                             <connections>
                                 <segue destination="yT1-ey-KFg" kind="show" id="UMA-PB-Fm9"/>
@@ -273,7 +273,7 @@
                         <viewLayoutGuide key="safeArea" id="FfU-RT-3pG"/>
                     </view>
                     <navigationItem key="navigationItem" id="qD2-ST-bUD">
-                        <barButtonItem key="backBarButtonItem" title="Atrás" id="Unn-WN-Hqx"/>
+                        <barButtonItem key="backBarButtonItem" title="Regresar" id="Unn-WN-Hqx"/>
                         <barButtonItem key="rightBarButtonItem" title="Siguiente" id="Gx8-cM-xyi">
                             <connections>
                                 <segue destination="zSq-Oh-eWu" kind="show" id="mC8-TH-34n"/>
@@ -439,7 +439,7 @@
                         <viewLayoutGuide key="safeArea" id="mYv-x9-GiW"/>
                     </view>
                     <navigationItem key="navigationItem" id="LL3-1i-Co2">
-                        <barButtonItem key="backBarButtonItem" title="Atrás" id="h0b-9I-xpt"/>
+                        <barButtonItem key="backBarButtonItem" title="Regresar" id="h0b-9I-xpt"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zN-uT-smV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -528,7 +528,7 @@
                         <viewLayoutGuide key="safeArea" id="yFo-BW-vze"/>
                     </view>
                     <navigationItem key="navigationItem" id="muk-nT-dCN">
-                        <barButtonItem key="backBarButtonItem" title="Atrás" id="3f9-i0-EYh"/>
+                        <barButtonItem key="backBarButtonItem" title="Regresar" id="3f9-i0-EYh"/>
                     </navigationItem>
                     <connections>
                         <outlet property="imgCarta" destination="1wc-Nw-Uo7" id="XE7-sC-3gp"/>
